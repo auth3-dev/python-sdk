@@ -11,13 +11,13 @@ Check-out the API documentation at [https://docs.auth3.dev/apis/identity-platfor
 Add to your requirements.txt: 
 
 ```
-auth3-sdk>=1.0.0
+auth3>=1.0.0
 ```
 
 Or run:
 
 ```
-python3 -m pip install --upgrade auth3-sdk
+python3 -m pip install --upgrade auth3
 ```
 
 ## Build
