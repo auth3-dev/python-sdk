@@ -1,6 +1,6 @@
 # Auth3 Python SDK
 
-The official [Auth3](https://auth3.dev) python SDK library.
+The official [Auth3](https://auth3.dev/?utm_source=github&utm_medium=sdk&utm_campaign=python) python SDK library.
 
 ## API Documentation
 
@@ -66,7 +66,7 @@ Not your target language? Check out our official SDKs for:
 
 ## Contributing
 
-At this time we don't accept external contributions, but we're open for feedbacks and requests. We're always looking for contributions on our security, refer to [our dedicated page](https://auth3.dev/bounty-program/?utm_source=github&utm_medium=sdk&utm_campaign=swift) for more.
+At this time we don't accept external contributions, but we're open for feedbacks and requests. We're always looking for contributions on our security, refer to [our dedicated page](https://auth3.dev/bounty-program/?utm_source=github&utm_medium=sdk&utm_campaign=python) for more.
 
 ## Support
 
