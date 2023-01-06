@@ -24,6 +24,11 @@ class AdminStub(object):
                 request_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentityRequest.SerializeToString,
                 response_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentityResponse.FromString,
                 )
+        self.GetIdentityByIdentifier = channel.unary_unary(
+                '/depot.devtools.auth.v0.identity.admin.Admin/GetIdentityByIdentifier',
+                request_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentityByIdentifierRequest.SerializeToString,
+                response_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentityByIdentifierResponse.FromString,
+                )
         self.GetIdentitiesByAttribute = channel.unary_unary(
                 '/depot.devtools.auth.v0.identity.admin.Admin/GetIdentitiesByAttribute',
                 request_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentitiesByAttributeRequest.SerializeToString,
@@ -186,6 +191,12 @@ class AdminServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def GetIdentity(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GetIdentityByIdentifier(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -384,6 +395,11 @@ def add_AdminServicer_to_server(servicer, server):
                     request_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentityRequest.FromString,
                     response_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentityResponse.SerializeToString,
             ),
+            'GetIdentityByIdentifier': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetIdentityByIdentifier,
+                    request_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentityByIdentifierRequest.FromString,
+                    response_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentityByIdentifierResponse.SerializeToString,
+            ),
             'GetIdentitiesByAttribute': grpc.unary_unary_rpc_method_handler(
                     servicer.GetIdentitiesByAttribute,
                     request_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentitiesByAttributeRequest.FromString,
@@ -575,6 +591,23 @@ class Admin(object):
         return grpc.experimental.unary_unary(request, target, '/depot.devtools.auth.v0.identity.admin.Admin/GetIdentity',
             devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentityRequest.SerializeToString,
             devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentityResponse.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GetIdentityByIdentifier(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/depot.devtools.auth.v0.identity.admin.Admin/GetIdentityByIdentifier',
+            devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentityByIdentifierRequest.SerializeToString,
+            devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetIdentityByIdentifierResponse.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
