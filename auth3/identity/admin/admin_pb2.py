@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'\n\030dev.auth3.identity.adminB\nAdminProtoP\001Z\'github.com/auth3-dev/go-sdk/admin;admin\370\001\001\242\002\004A3IA\252\002\024Auth3.Identity.Admin\312\002\024Auth3\\Identity\\Admin\352\002\026Auth3::Identity::Admin',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n1identity/admin/admin.proto\x12%depot.devtools.auth.v0.identity.admin\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x1cgoogle/protobuf/struct.proto\"\x86\x01\n\x15\x43reateIdentityRequest\x12+\n\x04\x64\x61ta\x18\x01 \x01(\x0b\x32\x17.google.protobuf.StructR\x04\x64\x61ta\x12#\n\rconnection_id\x18\x02 \x01(\tR\x0c\x63onnectionId\x12\x1b\n\tschema_id\x18\x03 \x01(\tR\x08schemaId\"9\n\x16\x43reateIdentityResponse\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\"R\n\x14GetIdentitiesRequest\x12\x1b\n\tpage_size\x18\x01 \x01(\x05R\x08pageSize\x12\x1d\n\npage_token\x18\x02 \x01(\tR\tpageToken\"\xae\x04\n\x15GetIdentitiesResponse\x12\x65\n\nidentities\x18\x01 \x03(\x0b\x32\x45.depot.devtools.auth.v0.identity.admin.GetIdentitiesResponse.IdentityR\nidentities\x12&\n\x0fnext_page_token\x18\x02 \x01(\tR\rnextPageToken\x12\x1d\n\ntotal_size\x18\x03 \x01(\x05R\ttotalSize\x1a\xbe\x02\n\x08Identity\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\x12\x39\n\ncreated_at\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\'\n\x0fmain_identifier\x18\x04 \x01(\tR\x0emainIdentifier\x12\x1b\n\tschema_id\x18\x05 \x01(\tR\x08schemaId\x12U\n\x04lock\x18\x06 \x01(\x0e\x32\x41.depot.devtools.auth.v0.identity.admin.GetIdentitiesResponse.LockR\x04lock\"&\n\x04Lock\x12\x0c\n\x08UNLOCKED\x10\x00\x12\x10\n\x0c\x41\x44MIN_LOCKED\x10\x01\"5\n\x12GetIdentityRequest\x12\x1f\n\x0bidentity_id\x18\x02 \x01(\tR\nidentityId\"\xed\x04\n\x13GetIdentityResponse\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\x12\x39\n\ncreated_at\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\'\n\x0fmain_identifier\x18\x04 \x01(\tR\x0emainIdentifier\x12\x1b\n\ttraits_id\x18\x05 \x01(\tR\x08traitsId\x12#\n\raddresses_ids\x18\x06 \x03(\tR\x0c\x61\x64\x64ressesIds\x12w\n\x0f\x63redentials_ids\x18\x07 \x03(\x0b\x32N.depot.devtools.auth.v0.identity.admin.GetIdentityResponse.CredentialsIdsEntryR\x0e\x63redentialsIds\x12\x1b\n\tschema_id\x18\x08 \x01(\tR\x08schemaId\x12S\n\x04lock\x18\t \x01(\x0e\x32?.depot.devtools.auth.v0.identity.admin.GetIdentityResponse.LockR\x04lock\x1a\x41\n\x13\x43redentialsIdsEntry\x12\x10\n\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n\x05value\x18\x02 \x01(\tR\x05value:\x02\x38\x01\"&\n\x04Lock\x12\x0c\n\x08UNLOCKED\x10\x00\x12\x10\n\x0c\x41\x44MIN_LOCKED\x10\x01\"y\n\x1eGetIdentityByIdentifierRequest\x12\x1c\n\tattribute\x18\x01 \x01(\tR\tattribute\x12\x14\n\x05value\x18\x02 \x01(\tR\x05value\x12#\n\rconnection_id\x18\x03 \x01(\tR\x0c\x63onnectionId\"\x9e\x06\n\x1fGetIdentityByIdentifierResponse\x12k\n\x08identity\x18\x01 \x01(\x0b\x32O.depot.devtools.auth.v0.identity.admin.GetIdentityByIdentifierResponse.IdentityR\x08identity\x1a\x8d\x05\n\x08Identity\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\x12\x39\n\ncreated_at\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\'\n\x0fmain_identifier\x18\x04 \x01(\tR\x0emainIdentifier\x12\x1b\n\ttraits_id\x18\x05 \x01(\tR\x08traitsId\x12#\n\raddresses_ids\x18\x06 \x03(\tR\x0c\x61\x64\x64ressesIds\x12\x8c\x01\n\x0f\x63redentials_ids\x18\x07 \x03(\x0b\x32\x63.depot.devtools.auth.v0.identity.admin.GetIdentityByIdentifierResponse.Identity.CredentialsIdsEntryR\x0e\x63redentialsIds\x12\x1b\n\tschema_id\x18\x08 \x01(\tR\x08schemaId\x12h\n\x04lock\x18\t \x01(\x0e\x32T.depot.devtools.auth.v0.identity.admin.GetIdentityByIdentifierResponse.Identity.LockR\x04lock\x1a\x41\n\x13\x43redentialsIdsEntry\x12\x10\n\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n\x05value\x18\x02 \x01(\tR\x05value:\x02\x38\x01\"&\n\x04Lock\x12\x0c\n\x08UNLOCKED\x10\x00\x12\x10\n\x0c\x41\x44MIN_LOCKED\x10\x01\"U\n\x1fGetIdentitiesByAttributeRequest\x12\x1c\n\tattribute\x18\x01 \x01(\tR\tattribute\x12\x14\n\x05value\x18\x02 \x01(\tR\x05value\"\xa6\x06\n GetIdentitiesByAttributeResponse\x12p\n\nidentities\x18\x01 \x03(\x0b\x32P.depot.devtools.auth.v0.identity.admin.GetIdentitiesByAttributeResponse.IdentityR\nidentities\x1a\x8f\x05\n\x08Identity\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\x12\x39\n\ncreated_at\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\'\n\x0fmain_identifier\x18\x04 \x01(\tR\x0emainIdentifier\x12\x1b\n\ttraits_id\x18\x05 \x01(\tR\x08traitsId\x12#\n\raddresses_ids\x18\x06 \x03(\tR\x0c\x61\x64\x64ressesIds\x12\x8d\x01\n\x0f\x63redentials_ids\x18\x07 \x03(\x0b\x32\x64.depot.devtools.auth.v0.identity.admin.GetIdentitiesByAttributeResponse.Identity.CredentialsIdsEntryR\x0e\x63redentialsIds\x12\x1b\n\tschema_id\x18\x08 \x01(\tR\x08schemaId\x12i\n\x04lock\x18\t \x01(\x0e\x32U.depot.devtools.auth.v0.identity.admin.GetIdentitiesByAttributeResponse.Identity.LockR\x04lock\x1a\x41\n\x13\x43redentialsIdsEntry\x12\x10\n\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n\x05value\x18\x02 \x01(\tR\x05value:\x02\x38\x01\"&\n\x04Lock\x12\x0c\n\x08UNLOCKED\x10\x00\x12\x10\n\x0c\x41\x44MIN_LOCKED\x10\x01\"\xb7\x01\n\x15UpdateIdentityRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\x12U\n\x04lock\x18\x02 \x01(\x0e\x32\x41.depot.devtools.auth.v0.identity.admin.UpdateIdentityRequest.LockR\x04lock\"&\n\x04Lock\x12\x0c\n\x08UNLOCKED\x10\x00\x12\x10\n\x0c\x41\x44MIN_LOCKED\x10\x01\"\x18\n\x16UpdateIdentityResponse\"8\n\x15\x44\x65leteIdentityRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\"\x18\n\x16\x44\x65leteIdentityResponse\"8\n\x15GetCredentialsRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\"\xa8\x04\n\x16GetCredentialsResponse\x12p\n\x0b\x63redentials\x18\x01 \x03(\x0b\x32N.depot.devtools.auth.v0.identity.admin.GetCredentialsResponse.CredentialsEntryR\x0b\x63redentials\x1a\x90\x02\n\nCredential\x12#\n\rcredential_id\x18\x01 \x01(\tR\x0c\x63redentialId\x12\x39\n\ncreated_at\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\x1f\n\x0bidentity_id\x18\x04 \x01(\tR\nidentityId\x12\x12\n\x04type\x18\x05 \x01(\x05R\x04type\x12\x12\n\x04name\x18\x06 \x01(\tR\x04name\x12\x1e\n\nconfigured\x18\x07 \x01(\x08R\nconfigured\x1a\x88\x01\n\x10\x43redentialsEntry\x12\x10\n\x03key\x18\x01 \x01(\tR\x03key\x12^\n\x05value\x18\x02 \x01(\x0b\x32H.depot.devtools.auth.v0.identity.admin.GetCredentialsResponse.CredentialR\x05value:\x02\x38\x01\"\x8c\x01\n\x17UpdateCredentialRequest\x12+\n\x04\x64\x61ta\x18\x01 \x01(\x0b\x32\x17.google.protobuf.StructR\x04\x64\x61ta\x12#\n\rconnection_id\x18\x02 \x01(\tR\x0c\x63onnectionId\x12\x1f\n\x0bidentity_id\x18\x03 \x01(\tR\nidentityId\"\x1a\n\x18UpdateCredentialResponse\"\x86\t\n\x17\x43reateConnectionRequest\x12\x12\n\x04name\x18\x01 \x01(\tR\x04name\x12\x1b\n\tclient_id\x18\x02 \x01(\tR\x08\x63lientId\x12#\n\rclient_secret\x18\x03 \x01(\tR\x0c\x63lientSecret\x12(\n\x10\x62utton_image_url\x18\x04 \x01(\tR\x0e\x62uttonImageUrl\x12\x64\n\x08provider\x18\x06 \x01(\x0e\x32H.depot.devtools.auth.v0.identity.admin.CreateConnectionRequest.ProvidersR\x08provider\x12,\n\x12oidc_discovery_url\x18\x07 \x01(\tR\x10oidcDiscoveryUrl\x12\x10\n\x03mfa\x18\x08 \x03(\tR\x03mfa\x12X\n\x04type\x18\t \x01(\x0e\x32\x44.depot.devtools.auth.v0.identity.admin.CreateConnectionRequest.TypesR\x04type\x12\x16\n\x06scopes\x18\n \x01(\tR\x06scopes\"\x93\x05\n\tProviders\x12\x08\n\x04NONE\x10\x00\x12\n\n\x06OPENID\x10\x01\x12\n\n\x06\x41MAZON\x10\x02\x12\r\n\tBITBUCKET\x10\x03\x12\x07\n\x03\x42OX\x10\x04\x12\x0f\n\x0b\x44\x41ILYMOTION\x10\x05\x12\n\n\x06\x44\x45\x45ZER\x10\x06\x12\x10\n\x0c\x44IGITALOCEAN\x10\x07\x12\x0b\n\x07\x44ISCORD\x10\x08\x12\x0b\n\x07\x44ROPBOX\x10\t\x12\r\n\tEVEONLINE\x10\n\x12\x0c\n\x08\x46\x41\x43\x45\x42OOK\x10\x0b\x12\n\n\x06\x46ITBIT\x10\x0c\x12\t\n\x05GITEA\x10\r\x12\n\n\x06GITHUB\x10\x0e\x12\n\n\x06GITLAB\x10\x0f\x12\n\n\x06GOOGLE\x10\x10\x12\x0b\n\x07SHOPIFY\x10\x12\x12\x0e\n\nSOUNDCLOUD\x10\x13\x12\x0b\n\x07SPOTIFY\x10\x14\x12\t\n\x05STEAM\x10\x15\x12\n\n\x06STRIPE\x10\x16\x12\n\n\x06TWITCH\x10\x17\x12\x08\n\x04UBER\x10\x18\x12\t\n\x05WEPAY\x10\x19\x12\t\n\x05YAHOO\x10\x1a\x12\n\n\x06YAMMER\x10\x1b\x12\n\n\x06HEROKU\x10\x1c\x12\r\n\tINSTAGRAM\x10\x1d\x12\x0c\n\x08INTERCOM\x10\x1e\x12\t\n\x05KAKAO\x10\x1f\x12\n\n\x06LASTFM\x10 \x12\x0c\n\x08LINKEDIN\x10!\x12\x08\n\x04LINE\x10\"\x12\x0c\n\x08ONEDRIVE\x10#\x12\x0b\n\x07\x41ZUREAD\x10$\x12\x13\n\x0fMICROSOFTONLINE\x10%\x12\r\n\tBATTLENET\x10&\x12\n\n\x06PAYPAL\x10\'\x12\x0b\n\x07TWITTER\x10(\x12\x0e\n\nSALESFORCE\x10)\x12\x0c\n\x08TYPETALK\x10*\x12\t\n\x05SLACK\x10+\x12\n\n\x06MEETUP\x10,\x12\x08\n\x04XERO\x10.\x12\x06\n\x02VK\x10/\x12\t\n\x05NAVER\x10\x30\x12\n\n\x06YANDEX\x10\x31\x12\r\n\tNEXTCLOUD\x10\x32\x12\t\n\x05\x41PPLE\x10\x34\x12\n\n\x06STRAVA\x10\x35\"=\n\x05Types\x12\t\n\x05UNSET\x10\x00\x12\x0c\n\x08PASSWORD\x10\x01\x12\x07\n\x03OTP\x10\x02\x12\x08\n\x04TOTP\x10\x03\x12\x08\n\x04OIDC\x10\x04\".\n\x18\x43reateConnectionResponse\x12\x12\n\x04name\x18\x01 \x01(\tR\x04name\"\x17\n\x15GetConnectionsRequest\"\xc5\x0b\n\x16GetConnectionsResponse\x12j\n\x0b\x63onnections\x18\x01 \x03(\x0b\x32H.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.ConnectionR\x0b\x63onnections\x1a\x94\x04\n\nConnection\x12\x12\n\x04name\x18\x01 \x01(\tR\x04name\x12\x1b\n\tclient_id\x18\x02 \x01(\tR\x08\x63lientId\x12#\n\rclient_secret\x18\x03 \x01(\tR\x0c\x63lientSecret\x12(\n\x10\x62utton_image_url\x18\x04 \x01(\tR\x0e\x62uttonImageUrl\x12\x63\n\x08provider\x18\x06 \x01(\x0e\x32G.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.ProvidersR\x08provider\x12,\n\x12oidc_discovery_url\x18\x07 \x01(\tR\x10oidcDiscoveryUrl\x12\x10\n\x03mfa\x18\x08 \x03(\tR\x03mfa\x12W\n\x04type\x18\t \x01(\x0e\x32\x43.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.TypesR\x04type\x12\x0e\n\x02id\x18\n \x01(\tR\x02id\x12\x16\n\x06scopes\x18\x0b \x01(\tR\x06scopes\x12`\n\x07purpose\x18\x0c \x01(\x0e\x32\x46.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.PurposesR\x07purpose\"\x93\x05\n\tProviders\x12\x08\n\x04NONE\x10\x00\x12\n\n\x06OPENID\x10\x01\x12\n\n\x06\x41MAZON\x10\x02\x12\r\n\tBITBUCKET\x10\x03\x12\x07\n\x03\x42OX\x10\x04\x12\x0f\n\x0b\x44\x41ILYMOTION\x10\x05\x12\n\n\x06\x44\x45\x45ZER\x10\x06\x12\x10\n\x0c\x44IGITALOCEAN\x10\x07\x12\x0b\n\x07\x44ISCORD\x10\x08\x12\x0b\n\x07\x44ROPBOX\x10\t\x12\r\n\tEVEONLINE\x10\n\x12\x0c\n\x08\x46\x41\x43\x45\x42OOK\x10\x0b\x12\n\n\x06\x46ITBIT\x10\x0c\x12\t\n\x05GITEA\x10\r\x12\n\n\x06GITHUB\x10\x0e\x12\n\n\x06GITLAB\x10\x0f\x12\n\n\x06GOOGLE\x10\x10\x12\x0b\n\x07SHOPIFY\x10\x12\x12\x0e\n\nSOUNDCLOUD\x10\x13\x12\x0b\n\x07SPOTIFY\x10\x14\x12\t\n\x05STEAM\x10\x15\x12\n\n\x06STRIPE\x10\x16\x12\n\n\x06TWITCH\x10\x17\x12\x08\n\x04UBER\x10\x18\x12\t\n\x05WEPAY\x10\x19\x12\t\n\x05YAHOO\x10\x1a\x12\n\n\x06YAMMER\x10\x1b\x12\n\n\x06HEROKU\x10\x1c\x12\r\n\tINSTAGRAM\x10\x1d\x12\x0c\n\x08INTERCOM\x10\x1e\x12\t\n\x05KAKAO\x10\x1f\x12\n\n\x06LASTFM\x10 \x12\x0c\n\x08LINKEDIN\x10!\x12\x08\n\x04LINE\x10\"\x12\x0c\n\x08ONEDRIVE\x10#\x12\x0b\n\x07\x41ZUREAD\x10$\x12\x13\n\x0fMICROSOFTONLINE\x10%\x12\r\n\tBATTLENET\x10&\x12\n\n\x06PAYPAL\x10\'\x12\x0b\n\x07TWITTER\x10(\x12\x0e\n\nSALESFORCE\x10)\x12\x0c\n\x08TYPETALK\x10*\x12\t\n\x05SLACK\x10+\x12\n\n\x06MEETUP\x10,\x12\x08\n\x04XERO\x10.\x12\x06\n\x02VK\x10/\x12\t\n\x05NAVER\x10\x30\x12\n\n\x06YANDEX\x10\x31\x12\r\n\tNEXTCLOUD\x10\x32\x12\t\n\x05\x41PPLE\x10\x34\x12\n\n\x06STRAVA\x10\x35\"=\n\x05Types\x12\t\n\x05UNSET\x10\x00\x12\x0c\n\x08PASSWORD\x10\x01\x12\x07\n\x03OTP\x10\x02\x12\x08\n\x04TOTP\x10\x03\x12\x08\n\x04OIDC\x10\x04\"S\n\x08Purposes\x12\x13\n\x0fPURPOSE_UNKNOWN\x10\x00\x12\x17\n\x13PURPOSE_MAIN_FACTOR\x10\x01\x12\x19\n\x15PURPOSE_SECOND_FACTOR\x10\x02\"\x96\t\n\x17UpdateConnectionRequest\x12\x12\n\x04name\x18\x01 \x01(\tR\x04name\x12\x1b\n\tclient_id\x18\x02 \x01(\tR\x08\x63lientId\x12#\n\rclient_secret\x18\x03 \x01(\tR\x0c\x63lientSecret\x12(\n\x10\x62utton_image_url\x18\x04 \x01(\tR\x0e\x62uttonImageUrl\x12\x64\n\x08provider\x18\x06 \x01(\x0e\x32H.depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.ProvidersR\x08provider\x12,\n\x12oidc_discovery_url\x18\x07 \x01(\tR\x10oidcDiscoveryUrl\x12\x10\n\x03mfa\x18\x08 \x03(\tR\x03mfa\x12X\n\x04type\x18\t \x01(\x0e\x32\x44.depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.TypesR\x04type\x12\x0e\n\x02id\x18\n \x01(\tR\x02id\x12\x16\n\x06scopes\x18\x0b \x01(\tR\x06scopes\"\x93\x05\n\tProviders\x12\x08\n\x04NONE\x10\x00\x12\n\n\x06OPENID\x10\x01\x12\n\n\x06\x41MAZON\x10\x02\x12\r\n\tBITBUCKET\x10\x03\x12\x07\n\x03\x42OX\x10\x04\x12\x0f\n\x0b\x44\x41ILYMOTION\x10\x05\x12\n\n\x06\x44\x45\x45ZER\x10\x06\x12\x10\n\x0c\x44IGITALOCEAN\x10\x07\x12\x0b\n\x07\x44ISCORD\x10\x08\x12\x0b\n\x07\x44ROPBOX\x10\t\x12\r\n\tEVEONLINE\x10\n\x12\x0c\n\x08\x46\x41\x43\x45\x42OOK\x10\x0b\x12\n\n\x06\x46ITBIT\x10\x0c\x12\t\n\x05GITEA\x10\r\x12\n\n\x06GITHUB\x10\x0e\x12\n\n\x06GITLAB\x10\x0f\x12\n\n\x06GOOGLE\x10\x10\x12\x0b\n\x07SHOPIFY\x10\x12\x12\x0e\n\nSOUNDCLOUD\x10\x13\x12\x0b\n\x07SPOTIFY\x10\x14\x12\t\n\x05STEAM\x10\x15\x12\n\n\x06STRIPE\x10\x16\x12\n\n\x06TWITCH\x10\x17\x12\x08\n\x04UBER\x10\x18\x12\t\n\x05WEPAY\x10\x19\x12\t\n\x05YAHOO\x10\x1a\x12\n\n\x06YAMMER\x10\x1b\x12\n\n\x06HEROKU\x10\x1c\x12\r\n\tINSTAGRAM\x10\x1d\x12\x0c\n\x08INTERCOM\x10\x1e\x12\t\n\x05KAKAO\x10\x1f\x12\n\n\x06LASTFM\x10 \x12\x0c\n\x08LINKEDIN\x10!\x12\x08\n\x04LINE\x10\"\x12\x0c\n\x08ONEDRIVE\x10#\x12\x0b\n\x07\x41ZUREAD\x10$\x12\x13\n\x0fMICROSOFTONLINE\x10%\x12\r\n\tBATTLENET\x10&\x12\n\n\x06PAYPAL\x10\'\x12\x0b\n\x07TWITTER\x10(\x12\x0e\n\nSALESFORCE\x10)\x12\x0c\n\x08TYPETALK\x10*\x12\t\n\x05SLACK\x10+\x12\n\n\x06MEETUP\x10,\x12\x08\n\x04XERO\x10.\x12\x06\n\x02VK\x10/\x12\t\n\x05NAVER\x10\x30\x12\n\n\x06YANDEX\x10\x31\x12\r\n\tNEXTCLOUD\x10\x32\x12\t\n\x05\x41PPLE\x10\x34\x12\n\n\x06STRAVA\x10\x35\"=\n\x05Types\x12\t\n\x05UNSET\x10\x00\x12\x0c\n\x08PASSWORD\x10\x01\x12\x07\n\x03OTP\x10\x02\x12\x08\n\x04TOTP\x10\x03\x12\x08\n\x04OIDC\x10\x04\"\x1a\n\x18UpdateConnectionResponse\")\n\x17\x44\x65leteConnectionRequest\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\"\x1a\n\x18\x44\x65leteConnectionResponse\"\x19\n\x17GetOAuth2ClientsRequest\"\xa1\x10\n\x18GetOAuth2ClientsResponse\x12`\n\x07\x63lients\x18\x01 \x03(\x0b\x32\x46.depot.devtools.auth.v0.identity.admin.GetOAuth2ClientsResponse.ClientR\x07\x63lients\x1a\xa2\x0f\n\x06\x43lient\x12\x30\n\x14\x61llowed_cors_origins\x18\x01 \x03(\tR\x12\x61llowedCorsOrigins\x12\x1a\n\x08\x61udience\x18\x02 \x03(\tR\x08\x61udience\x12M\n#backchannel_logout_session_required\x18\x03 \x01(\x08R backchannelLogoutSessionRequired\x12\x34\n\x16\x62\x61\x63kchannel_logout_uri\x18\x04 \x01(\tR\x14\x62\x61\x63kchannelLogoutUri\x12\x1b\n\tclient_id\x18\x05 \x01(\tR\x08\x63lientId\x12\x1f\n\x0b\x63lient_name\x18\x06 \x01(\tR\nclientName\x12\x37\n\x18\x63lient_secret_expires_at\x18\x07 \x01(\x03R\x15\x63lientSecretExpiresAt\x12\x1d\n\nclient_uri\x18\x08 \x01(\tR\tclientUri\x12\x1a\n\x08\x63ontacts\x18\t \x03(\tR\x08\x63ontacts\x12\x39\n\ncreated_at\x18\n \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12O\n$frontchannel_logout_session_required\x18\x0b \x01(\x08R!frontchannelLogoutSessionRequired\x12\x36\n\x17\x66rontchannel_logout_uri\x18\x0c \x01(\tR\x15\x66rontchannelLogoutUri\x12Q\n\x0bgrant_types\x18\r \x03(\x0e\x32\x30.depot.devtools.auth.v0.identity.admin.GrantTypeR\ngrantTypes\x12+\n\x04jwks\x18\x0e \x01(\x0b\x32\x17.google.protobuf.StructR\x04jwks\x12\x19\n\x08jwks_uri\x18\x0f \x01(\tR\x07jwksUri\x12\x19\n\x08logo_uri\x18\x10 \x01(\tR\x07logoUri\x12\x33\n\x08metadata\x18\x11 \x01(\x0b\x32\x17.google.protobuf.StructR\x08metadata\x12\x14\n\x05owner\x18\x12 \x01(\tR\x05owner\x12\x1d\n\npolicy_uri\x18\x13 \x01(\tR\tpolicyUri\x12\x39\n\x19post_logout_redirect_uris\x18\x14 \x03(\tR\x16postLogoutRedirectUris\x12#\n\rredirect_uris\x18\x15 \x03(\tR\x0credirectUris\x12{\n\x1arequest_object_signing_alg\x18\x16 \x01(\x0e\x32>.depot.devtools.auth.v0.identity.admin.RequestObjectSigningAlgR\x17requestObjectSigningAlg\x12!\n\x0crequest_uris\x18\x17 \x03(\tR\x0brequestUris\x12Z\n\x0eresponse_types\x18\x18 \x03(\x0e\x32\x33.depot.devtools.auth.v0.identity.admin.ResponseTypeR\rresponseTypes\x12\x14\n\x05scope\x18\x19 \x01(\tR\x05scope\x12\x32\n\x15sector_identifier_uri\x18\x1a \x01(\tR\x13sectorIdentifierUri\x12U\n\x0csubject_type\x18\x1b \x01(\x0e\x32\x32.depot.devtools.auth.v0.identity.admin.SubjectTypeR\x0bsubjectType\x12{\n\x1atoken_endpoint_auth_method\x18\x1c \x01(\x0e\x32>.depot.devtools.auth.v0.identity.admin.TokenEndpointAuthMethodR\x17tokenEndpointAuthMethod\x12\x88\x01\n\x1ftoken_endpoint_auth_signing_alg\x18\x1d \x01(\x0e\x32\x42.depot.devtools.auth.v0.identity.admin.TokenEndpointAuthSigningAlgR\x1btokenEndpointAuthSigningAlg\x12\x17\n\x07tos_uri\x18\x1e \x01(\tR\x06tosUri\x12\x39\n\nupdated_at\x18\x1f \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\x81\x01\n\x1cuserinfo_signed_response_alg\x18  \x01(\x0e\x32@.depot.devtools.auth.v0.identity.admin.UserinfoSignedResponseAlgR\x19userinfoSignedResponseAlg\x12R\n\x0b\x63lient_type\x18! \x01(\x0e\x32\x31.depot.devtools.auth.v0.identity.admin.ClientTypeR\nclientType\"\x8e\x0e\n\x19\x43reateOAuth2ClientRequest\x12\x30\n\x14\x61llowed_cors_origins\x18\x01 \x03(\tR\x12\x61llowedCorsOrigins\x12\x1a\n\x08\x61udience\x18\x02 \x03(\tR\x08\x61udience\x12M\n#backchannel_logout_session_required\x18\x03 \x01(\x08R backchannelLogoutSessionRequired\x12\x34\n\x16\x62\x61\x63kchannel_logout_uri\x18\x04 \x01(\tR\x14\x62\x61\x63kchannelLogoutUri\x12\x1f\n\x0b\x63lient_name\x18\x06 \x01(\tR\nclientName\x12\x1d\n\nclient_uri\x18\x08 \x01(\tR\tclientUri\x12\x1a\n\x08\x63ontacts\x18\t \x03(\tR\x08\x63ontacts\x12O\n$frontchannel_logout_session_required\x18\x0b \x01(\x08R!frontchannelLogoutSessionRequired\x12\x36\n\x17\x66rontchannel_logout_uri\x18\x0c \x01(\tR\x15\x66rontchannelLogoutUri\x12Q\n\x0bgrant_types\x18\r \x03(\x0e\x32\x30.depot.devtools.auth.v0.identity.admin.GrantTypeR\ngrantTypes\x12+\n\x04jwks\x18\x0e \x01(\x0b\x32\x17.google.protobuf.StructR\x04jwks\x12\x19\n\x08jwks_uri\x18\x0f \x01(\tR\x07jwksUri\x12\x19\n\x08logo_uri\x18\x10 \x01(\tR\x07logoUri\x12\x33\n\x08metadata\x18\x11 \x01(\x0b\x32\x17.google.protobuf.StructR\x08metadata\x12\x14\n\x05owner\x18\x12 \x01(\tR\x05owner\x12\x1d\n\npolicy_uri\x18\x13 \x01(\tR\tpolicyUri\x12\x39\n\x19post_logout_redirect_uris\x18\x14 \x03(\tR\x16postLogoutRedirectUris\x12#\n\rredirect_uris\x18\x15 \x03(\tR\x0credirectUris\x12{\n\x1arequest_object_signing_alg\x18\x16 \x01(\x0e\x32>.depot.devtools.auth.v0.identity.admin.RequestObjectSigningAlgR\x17requestObjectSigningAlg\x12!\n\x0crequest_uris\x18\x17 \x03(\tR\x0brequestUris\x12Z\n\x0eresponse_types\x18\x18 \x03(\x0e\x32\x33.depot.devtools.auth.v0.identity.admin.ResponseTypeR\rresponseTypes\x12\x14\n\x05scope\x18\x19 \x01(\tR\x05scope\x12\x32\n\x15sector_identifier_uri\x18\x1a \x01(\tR\x13sectorIdentifierUri\x12U\n\x0csubject_type\x18\x1b \x01(\x0e\x32\x32.depot.devtools.auth.v0.identity.admin.SubjectTypeR\x0bsubjectType\x12{\n\x1atoken_endpoint_auth_method\x18\x1c \x01(\x0e\x32>.depot.devtools.auth.v0.identity.admin.TokenEndpointAuthMethodR\x17tokenEndpointAuthMethod\x12\x88\x01\n\x1ftoken_endpoint_auth_signing_alg\x18\x1d \x01(\x0e\x32\x42.depot.devtools.auth.v0.identity.admin.TokenEndpointAuthSigningAlgR\x1btokenEndpointAuthSigningAlg\x12\x17\n\x07tos_uri\x18\x1e \x01(\tR\x06tosUri\x12\x81\x01\n\x1cuserinfo_signed_response_alg\x18\x1f \x01(\x0e\x32@.depot.devtools.auth.v0.identity.admin.UserinfoSignedResponseAlgR\x19userinfoSignedResponseAlg\x12#\n\rclient_secret\x18  \x01(\tR\x0c\x63lientSecret\x12R\n\x0b\x63lient_type\x18! \x01(\x0e\x32\x31.depot.devtools.auth.v0.identity.admin.ClientTypeR\nclientType\"^\n\x1a\x43reateOAuth2ClientResponse\x12\x1b\n\tclient_id\x18\x01 \x01(\tR\x08\x63lientId\x12#\n\rclient_secret\x18\x02 \x01(\tR\x0c\x63lientSecret\"\xd7\r\n\x19UpdateOAuth2ClientRequest\x12\x30\n\x14\x61llowed_cors_origins\x18\x01 \x03(\tR\x12\x61llowedCorsOrigins\x12\x1a\n\x08\x61udience\x18\x02 \x03(\tR\x08\x61udience\x12M\n#backchannel_logout_session_required\x18\x03 \x01(\x08R backchannelLogoutSessionRequired\x12\x34\n\x16\x62\x61\x63kchannel_logout_uri\x18\x04 \x01(\tR\x14\x62\x61\x63kchannelLogoutUri\x12\x1f\n\x0b\x63lient_name\x18\x06 \x01(\tR\nclientName\x12\x1d\n\nclient_uri\x18\x08 \x01(\tR\tclientUri\x12\x1a\n\x08\x63ontacts\x18\t \x03(\tR\x08\x63ontacts\x12O\n$frontchannel_logout_session_required\x18\x0b \x01(\x08R!frontchannelLogoutSessionRequired\x12\x36\n\x17\x66rontchannel_logout_uri\x18\x0c \x01(\tR\x15\x66rontchannelLogoutUri\x12Q\n\x0bgrant_types\x18\r \x03(\x0e\x32\x30.depot.devtools.auth.v0.identity.admin.GrantTypeR\ngrantTypes\x12+\n\x04jwks\x18\x0e \x01(\x0b\x32\x17.google.protobuf.StructR\x04jwks\x12\x19\n\x08jwks_uri\x18\x0f \x01(\tR\x07jwksUri\x12\x19\n\x08logo_uri\x18\x10 \x01(\tR\x07logoUri\x12\x33\n\x08metadata\x18\x11 \x01(\x0b\x32\x17.google.protobuf.StructR\x08metadata\x12\x14\n\x05owner\x18\x12 \x01(\tR\x05owner\x12\x1d\n\npolicy_uri\x18\x13 \x01(\tR\tpolicyUri\x12\x39\n\x19post_logout_redirect_uris\x18\x14 \x03(\tR\x16postLogoutRedirectUris\x12#\n\rredirect_uris\x18\x15 \x03(\tR\x0credirectUris\x12{\n\x1arequest_object_signing_alg\x18\x16 \x01(\x0e\x32>.depot.devtools.auth.v0.identity.admin.RequestObjectSigningAlgR\x17requestObjectSigningAlg\x12!\n\x0crequest_uris\x18\x17 \x03(\tR\x0brequestUris\x12Z\n\x0eresponse_types\x18\x18 \x03(\x0e\x32\x33.depot.devtools.auth.v0.identity.admin.ResponseTypeR\rresponseTypes\x12\x14\n\x05scope\x18\x19 \x01(\tR\x05scope\x12\x32\n\x15sector_identifier_uri\x18\x1a \x01(\tR\x13sectorIdentifierUri\x12U\n\x0csubject_type\x18\x1b \x01(\x0e\x32\x32.depot.devtools.auth.v0.identity.admin.SubjectTypeR\x0bsubjectType\x12{\n\x1atoken_endpoint_auth_method\x18\x1c \x01(\x0e\x32>.depot.devtools.auth.v0.identity.admin.TokenEndpointAuthMethodR\x17tokenEndpointAuthMethod\x12\x88\x01\n\x1ftoken_endpoint_auth_signing_alg\x18\x1d \x01(\x0e\x32\x42.depot.devtools.auth.v0.identity.admin.TokenEndpointAuthSigningAlgR\x1btokenEndpointAuthSigningAlg\x12\x17\n\x07tos_uri\x18\x1e \x01(\tR\x06tosUri\x12\x81\x01\n\x1cuserinfo_signed_response_alg\x18\x1f \x01(\x0e\x32@.depot.devtools.auth.v0.identity.admin.UserinfoSignedResponseAlgR\x19userinfoSignedResponseAlg\x12#\n\rclient_secret\x18  \x01(\tR\x0c\x63lientSecret\x12\x1b\n\tclient_id\x18! \x01(\tR\x08\x63lientId\"^\n\x1aUpdateOAuth2ClientResponse\x12\x1b\n\tclient_id\x18\x01 \x01(\tR\x08\x63lientId\x12#\n\rclient_secret\x18\x02 \x01(\tR\x0c\x63lientSecret\"8\n\x19\x44\x65leteOAuth2ClientRequest\x12\x1b\n\tclient_id\x18\x01 \x01(\tR\x08\x63lientId\"\x1c\n\x1a\x44\x65leteOAuth2ClientResponse\"6\n\x13GetAddressesRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\"\xa4\x02\n\x14GetAddressesResponse\x12\x61\n\taddresses\x18\x01 \x03(\x0b\x32\x43.depot.devtools.auth.v0.identity.admin.GetAddressesResponse.AddressR\taddresses\x1a\xa8\x01\n\x07\x41\x64\x64ress\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x1f\n\x0bidentity_id\x18\x02 \x01(\tR\nidentityId\x12\x12\n\x04name\x18\x03 \x01(\tR\x04name\x12\x18\n\x07\x61\x64\x64ress\x18\x04 \x01(\tR\x07\x61\x64\x64ress\x12\x1a\n\x08verified\x18\x05 \x01(\x08R\x08verified\x12\"\n\rid_schema_key\x18\x06 \x01(\tR\x0bidSchemaKey\"T\n\x11GetAddressRequest\x12\x10\n\x02id\x18\x01 \x01(\tH\x00R\x02id\x12$\n\x0cverification\x18\x02 \x01(\tH\x00R\x0cverificationB\x07\n\x05match\"\xb3\x01\n\x12GetAddressResponse\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x1f\n\x0bidentity_id\x18\x02 \x01(\tR\nidentityId\x12\x12\n\x04name\x18\x03 \x01(\tR\x04name\x12\x18\n\x07\x61\x64\x64ress\x18\x04 \x01(\tR\x07\x61\x64\x64ress\x12\x1a\n\x08verified\x18\x05 \x01(\x08R\x08verified\x12\"\n\rid_schema_key\x18\x06 \x01(\tR\x0bidSchemaKey\"m\n\x14UpdateAddressRequest\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x1c\n\x08verified\x18\x02 \x01(\x08H\x00R\x08verified\x12\x1a\n\x07\x61\x64\x64ress\x18\x03 \x01(\tH\x00R\x07\x61\x64\x64ressB\x0b\n\tattribute\"\x17\n\x15UpdateAddressResponse\"3\n\x10GetTraitsRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\"+\n\x11GetTraitsResponse\x12\x16\n\x06traits\x18\x01 \x01(\tR\x06traits\"N\n\x13UpdateTraitsRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\x12\x16\n\x06traits\x18\x02 \x01(\tR\x06traits\"\x16\n\x14UpdateTraitsResponse\"B\n\x1fGetIdentityLoginAttemptsRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\"\x91\x03\n GetIdentityLoginAttemptsResponse\x12k\n\x08\x61ttempts\x18\x01 \x03(\x0b\x32O.depot.devtools.auth.v0.identity.admin.GetIdentityLoginAttemptsResponse.AttemptR\x08\x61ttempts\x1a\xff\x01\n\x07\x41ttempt\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x1f\n\x0bidentity_id\x18\x02 \x01(\tR\nidentityId\x12\x16\n\x06status\x18\x03 \x01(\tR\x06status\x12\x35\n\x16\x61uthentication_methods\x18\x04 \x03(\tR\x15\x61uthenticationMethods\x12\x39\n\ncreated_at\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nexpires_at\x18\x06 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\texpiresAt\"^\n\x15\x43reateIdSchemaRequest\x12\x12\n\x04name\x18\x01 \x01(\tR\x04name\x12\x31\n\x07\x63ontent\x18\x02 \x01(\x0b\x32\x17.google.protobuf.StructR\x07\x63ontent\"(\n\x16\x43reateIdSchemaResponse\x12\x0e\n\x02id\x18\x02 \x01(\tR\x02id\"\x15\n\x13GetIdSchemasRequest\"\xfb\x02\n\x14GetIdSchemasResponse\x12h\n\x0bjsonschemas\x18\x01 \x03(\x0b\x32\x46.depot.devtools.auth.v0.identity.admin.GetIdSchemasResponse.JsonSchemaR\x0bjsonschemas\x1a\xf8\x01\n\nJsonSchema\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n\x04name\x18\x02 \x01(\tR\x04name\x12\x31\n\x07\x63ontent\x18\x03 \x01(\x0b\x32\x17.google.protobuf.StructR\x07\x63ontent\x12\x39\n\ncreated_at\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\x1d\n\nis_default\x18\x06 \x01(\x08R\tisDefault\"$\n\x12GetIdSchemaRequest\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\"\x81\x02\n\x13GetIdSchemaResponse\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n\x04name\x18\x02 \x01(\tR\x04name\x12\x31\n\x07\x63ontent\x18\x03 \x01(\x0b\x32\x17.google.protobuf.StructR\x07\x63ontent\x12\x39\n\ncreated_at\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\x1d\n\nis_default\x18\x06 \x01(\x08R\tisDefault\"\x1b\n\x19GetDefaultIdSchemaRequest\"\x88\x02\n\x1aGetDefaultIdSchemaResponse\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n\x04name\x18\x02 \x01(\tR\x04name\x12\x31\n\x07\x63ontent\x18\x03 \x01(\x0b\x32\x17.google.protobuf.StructR\x07\x63ontent\x12\x39\n\ncreated_at\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\x1d\n\nis_default\x18\x06 \x01(\x08R\tisDefault\"n\n\x15UpdateIdSchemaRequest\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n\x04name\x18\x02 \x01(\tR\x04name\x12\x31\n\x07\x63ontent\x18\x03 \x01(\x0b\x32\x17.google.protobuf.StructR\x07\x63ontent\"\x18\n\x16UpdateIdSchemaResponse\",\n\x1aMarkDefaultIdSchemaRequest\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\"\x1d\n\x1bMarkDefaultIdSchemaResponse\"\'\n\x15\x44\x65leteIdSchemaRequest\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\"\x18\n\x16\x44\x65leteIdSchemaResponse\"\x17\n\x15GetEmailsSetupRequest\"\xcc\x07\n\x16GetEmailsSetupResponse\x12\x65\n\x07welcome\x18\x01 \x01(\x0b\x32K.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse.EmailTemplateR\x07welcome\x12~\n\x14\x61\x63\x63ount_verification\x18\x02 \x01(\x0b\x32K.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse.EmailTemplateR\x13\x61\x63\x63ountVerification\x12v\n\x10\x61\x63\x63ount_recovery\x18\x03 \x01(\x0b\x32K.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse.EmailTemplateR\x0f\x61\x63\x63ountRecovery\x12x\n\x11\x61\x63\x63ount_recovered\x18\x04 \x01(\x0b\x32K.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse.EmailTemplateR\x10\x61\x63\x63ountRecovered\x12]\n\x03otp\x18\x05 \x01(\x0b\x32K.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse.EmailTemplateR\x03otp\x12]\n\x04smtp\x18\x06 \x01(\x0b\x32I.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse.EmailSenderR\x04smtp\x12\x1d\n\nproject_id\x18\x07 \x01(\tR\tprojectId\x1a\x43\n\rEmailTemplate\x12\x18\n\x07\x63ontent\x18\x03 \x01(\tR\x07\x63ontent\x12\x18\n\x07subject\x18\x04 \x01(\tR\x07subject\x1a\xb6\x01\n\x0b\x45mailSender\x12#\n\remail_address\x18\x01 \x01(\tR\x0c\x65mailAddress\x12\x1b\n\tsmtp_host\x18\x02 \x01(\tR\x08smtpHost\x12\x1b\n\tsmtp_port\x18\x03 \x01(\rR\x08smtpPort\x12#\n\rsmtp_username\x18\x04 \x01(\tR\x0csmtpUsername\x12#\n\rsmtp_password\x18\x05 \x01(\tR\x0csmtpPassword\"\xbc\x07\n\x18UpdateEmailsSetupRequest\x12g\n\x07welcome\x18\x01 \x01(\x0b\x32M.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest.EmailTemplateR\x07welcome\x12\x80\x01\n\x14\x61\x63\x63ount_verification\x18\x02 \x01(\x0b\x32M.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest.EmailTemplateR\x13\x61\x63\x63ountVerification\x12x\n\x10\x61\x63\x63ount_recovery\x18\x03 \x01(\x0b\x32M.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest.EmailTemplateR\x0f\x61\x63\x63ountRecovery\x12z\n\x11\x61\x63\x63ount_recovered\x18\x04 \x01(\x0b\x32M.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest.EmailTemplateR\x10\x61\x63\x63ountRecovered\x12_\n\x03otp\x18\x05 \x01(\x0b\x32M.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest.EmailTemplateR\x03otp\x12_\n\x04smtp\x18\x06 \x01(\x0b\x32K.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest.EmailSenderR\x04smtp\x1a\x43\n\rEmailTemplate\x12\x18\n\x07\x63ontent\x18\x01 \x01(\tR\x07\x63ontent\x12\x18\n\x07subject\x18\x02 \x01(\tR\x07subject\x1a\xb6\x01\n\x0b\x45mailSender\x12#\n\remail_address\x18\x01 \x01(\tR\x0c\x65mailAddress\x12\x1b\n\tsmtp_host\x18\x02 \x01(\tR\x08smtpHost\x12\x1b\n\tsmtp_port\x18\x03 \x01(\rR\x08smtpPort\x12#\n\rsmtp_username\x18\x04 \x01(\tR\x0csmtpUsername\x12#\n\rsmtp_password\x18\x05 \x01(\tR\x0csmtpPassword\"\x1b\n\x19UpdateEmailsSetupResponse\"\xcb\x01\n\x1cGetUserBaseStatisticsRequest\x12\x1f\n\x0b\x64\x61ys_before\x18\x01 \x01(\rR\ndaysBefore\x12\x46\n\x11lifetime_start_at\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\x0flifetimeStartAt\x12\x42\n\x0flifetime_end_at\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\rlifetimeEndAt\"\xa1\x04\n\x1dGetUserBaseStatisticsResponse\x12\x1f\n\x0btotal_users\x18\x01 \x01(\x05R\ntotalUsers\x12y\n\rusers_per_day\x18\x02 \x03(\x0b\x32U.depot.devtools.auth.v0.identity.admin.GetUserBaseStatisticsResponse.UsersPerDayEntryR\x0busersPerDay\x12\x82\x01\n\x10sessions_per_day\x18\x03 \x03(\x0b\x32X.depot.devtools.auth.v0.identity.admin.GetUserBaseStatisticsResponse.SessionsPerDayEntryR\x0esessionsPerDay\x12,\n\x12total_active_users\x18\x04 \x01(\x05R\x10totalActiveUsers\x12.\n\x13total_lifetime_used\x18\x05 \x01(\x01R\x11totalLifetimeUsed\x1a>\n\x10UsersPerDayEntry\x12\x10\n\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n\x05value\x18\x02 \x01(\x05R\x05value:\x02\x38\x01\x1a\x41\n\x13SessionsPerDayEntry\x12\x10\n\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n\x05value\x18\x02 \x01(\x05R\x05value:\x02\x38\x01*l\n\nClientType\x12\x15\n\x11\x43LIENT_TYPE_UNSET\x10\x00\x12\x16\n\x12\x43LIENT_FIRST_PARTY\x10\x01\x12\x16\n\x12\x43LIENT_THIRD_PARTY\x10\x02\x12\x17\n\x13\x43LIENT_SYSTEM_PARTY\x10\x03*A\n\x0bSubjectType\x12\x17\n\x13SUBJECT_TYPE_PUBLIC\x10\x00\x12\x19\n\x15SUBJECT_TYPE_PAIRWISE\x10\x01*\xd5\x01\n\x17TokenEndpointAuthMethod\x12\x32\n.TOKEN_ENDPOINT_AUTH_METHOD_CLIENT_SECRET_BASIC\x10\x00\x12\x31\n-TOKEN_ENDPOINT_AUTH_METHOD_CLIENT_SECRET_POST\x10\x01\x12.\n*TOKEN_ENDPOINT_AUTH_METHOD_PRIVATE_KEY_JWT\x10\x02\x12#\n\x1fTOKEN_ENDPOINT_AUTH_METHOD_NONE\x10\x03*\xcb\x03\n\x1bTokenEndpointAuthSigningAlg\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_UNSET\x10\x00\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_RS256\x10\x01\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_RS384\x10\x02\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_RS512\x10\x03\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_PS256\x10\x04\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_PS384\x10\x05\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_PS512\x10\x06\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_ES256\x10\x07\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_ES384\x10\x08\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_ES512\x10\t*\xba\x01\n\tGrantType\x12\x14\n\x10GRANT_TYPE_UNSET\x10\x00\x12!\n\x1dGRANT_TYPE_CLIENT_CREDENTIALS\x10\x01\x12!\n\x1dGRANT_TYPE_AUTHORIZATION_CODE\x10\x02\x12\x17\n\x13GRANT_TYPE_IMPLICIT\x10\x03\x12\x1c\n\x18GRANT_TYPE_REFRESH_TOKEN\x10\x04\x12\x1a\n\x16GRANT_TYPE_DEVICE_CODE\x10\x05*\x94\x02\n\x0cResponseType\x12\x17\n\x13RESPONSE_TYPE_UNSET\x10\x00\x12\x16\n\x12RESPONSE_TYPE_NONE\x10\x01\x12\x1a\n\x16RESPONSE_TYPE_ID_TOKEN\x10\x02\x12\x17\n\x13RESPONSE_TYPE_TOKEN\x10\x03\x12\x16\n\x12RESPONSE_TYPE_CODE\x10\x04\x12 \n\x1cRESPONSE_TYPE_ID_TOKEN_TOKEN\x10\x05\x12\x1f\n\x1bRESPONSE_TYPE_CODE_ID_TOKEN\x10\x06\x12\x1c\n\x18RESPONSE_TYPE_CODE_TOKEN\x10\x07\x12%\n!RESPONSE_TYPE_CODE_ID_TOKEN_TOKEN\x10\x08*\x8a\x01\n\x17RequestObjectSigningAlg\x12$\n REQUEST_OBJECT_SIGNING_ALG_UNSET\x10\x00\x12#\n\x1fREQUEST_OBJECT_SIGNING_ALG_NONE\x10\x01\x12$\n REQUEST_OBJECT_SIGNING_ALG_RS256\x10\x02*\x92\x01\n\x19UserinfoSignedResponseAlg\x12&\n\"USERINFO_SIGNED_RESPONSE_ALG_UNSET\x10\x00\x12%\n!USERINFO_SIGNED_RESPONSE_ALG_NONE\x10\x01\x12&\n\"USERINFO_SIGNED_RESPONSE_ALG_RS256\x10\x02\x32\xa3&\n\x05\x41\x64min\x12\x8d\x01\n\x0e\x43reateIdentity\x12<.depot.devtools.auth.v0.identity.admin.CreateIdentityRequest\x1a=.depot.devtools.auth.v0.identity.admin.CreateIdentityResponse\x12\x84\x01\n\x0bGetIdentity\x12\x39.depot.devtools.auth.v0.identity.admin.GetIdentityRequest\x1a:.depot.devtools.auth.v0.identity.admin.GetIdentityResponse\x12\xa8\x01\n\x17GetIdentityByIdentifier\x12\x45.depot.devtools.auth.v0.identity.admin.GetIdentityByIdentifierRequest\x1a\x46.depot.devtools.auth.v0.identity.admin.GetIdentityByIdentifierResponse\x12\xab\x01\n\x18GetIdentitiesByAttribute\x12\x46.depot.devtools.auth.v0.identity.admin.GetIdentitiesByAttributeRequest\x1aG.depot.devtools.auth.v0.identity.admin.GetIdentitiesByAttributeResponse\x12\x8a\x01\n\rGetIdentities\x12;.depot.devtools.auth.v0.identity.admin.GetIdentitiesRequest\x1a<.depot.devtools.auth.v0.identity.admin.GetIdentitiesResponse\x12\x8d\x01\n\x0eUpdateIdentity\x12<.depot.devtools.auth.v0.identity.admin.UpdateIdentityRequest\x1a=.depot.devtools.auth.v0.identity.admin.UpdateIdentityResponse\x12\x8d\x01\n\x0e\x44\x65leteIdentity\x12<.depot.devtools.auth.v0.identity.admin.DeleteIdentityRequest\x1a=.depot.devtools.auth.v0.identity.admin.DeleteIdentityResponse\x12\x87\x01\n\x0cGetAddresses\x12:.depot.devtools.auth.v0.identity.admin.GetAddressesRequest\x1a;.depot.devtools.auth.v0.identity.admin.GetAddressesResponse\x12\x81\x01\n\nGetAddress\x12\x38.depot.devtools.auth.v0.identity.admin.GetAddressRequest\x1a\x39.depot.devtools.auth.v0.identity.admin.GetAddressResponse\x12\x8a\x01\n\rUpdateAddress\x12;.depot.devtools.auth.v0.identity.admin.UpdateAddressRequest\x1a<.depot.devtools.auth.v0.identity.admin.UpdateAddressResponse\x12~\n\tGetTraits\x12\x37.depot.devtools.auth.v0.identity.admin.GetTraitsRequest\x1a\x38.depot.devtools.auth.v0.identity.admin.GetTraitsResponse\x12\x87\x01\n\x0cUpdateTraits\x12:.depot.devtools.auth.v0.identity.admin.UpdateTraitsRequest\x1a;.depot.devtools.auth.v0.identity.admin.UpdateTraitsResponse\x12\x8d\x01\n\x0eGetCredentials\x12<.depot.devtools.auth.v0.identity.admin.GetCredentialsRequest\x1a=.depot.devtools.auth.v0.identity.admin.GetCredentialsResponse\x12\x93\x01\n\x10UpdateCredential\x12>.depot.devtools.auth.v0.identity.admin.UpdateCredentialRequest\x1a?.depot.devtools.auth.v0.identity.admin.UpdateCredentialResponse\x12\xab\x01\n\x18GetIdentityLoginAttempts\x12\x46.depot.devtools.auth.v0.identity.admin.GetIdentityLoginAttemptsRequest\x1aG.depot.devtools.auth.v0.identity.admin.GetIdentityLoginAttemptsResponse\x12\x93\x01\n\x10\x43reateConnection\x12>.depot.devtools.auth.v0.identity.admin.CreateConnectionRequest\x1a?.depot.devtools.auth.v0.identity.admin.CreateConnectionResponse\x12\x8d\x01\n\x0eGetConnections\x12<.depot.devtools.auth.v0.identity.admin.GetConnectionsRequest\x1a=.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse\x12\x93\x01\n\x10UpdateConnection\x12>.depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest\x1a?.depot.devtools.auth.v0.identity.admin.UpdateConnectionResponse\x12\x93\x01\n\x10\x44\x65leteConnection\x12>.depot.devtools.auth.v0.identity.admin.DeleteConnectionRequest\x1a?.depot.devtools.auth.v0.identity.admin.DeleteConnectionResponse\x12\x8d\x01\n\x0e\x43reateIdSchema\x12<.depot.devtools.auth.v0.identity.admin.CreateIdSchemaRequest\x1a=.depot.devtools.auth.v0.identity.admin.CreateIdSchemaResponse\x12\x87\x01\n\x0cGetIdSchemas\x12:.depot.devtools.auth.v0.identity.admin.GetIdSchemasRequest\x1a;.depot.devtools.auth.v0.identity.admin.GetIdSchemasResponse\x12\x84\x01\n\x0bGetIdSchema\x12\x39.depot.devtools.auth.v0.identity.admin.GetIdSchemaRequest\x1a:.depot.devtools.auth.v0.identity.admin.GetIdSchemaResponse\x12\x99\x01\n\x12GetDefaultIdSchema\x12@.depot.devtools.auth.v0.identity.admin.GetDefaultIdSchemaRequest\x1a\x41.depot.devtools.auth.v0.identity.admin.GetDefaultIdSchemaResponse\x12\x8d\x01\n\x0eUpdateIdSchema\x12<.depot.devtools.auth.v0.identity.admin.UpdateIdSchemaRequest\x1a=.depot.devtools.auth.v0.identity.admin.UpdateIdSchemaResponse\x12\x9c\x01\n\x13MarkDefaultIdSchema\x12\x41.depot.devtools.auth.v0.identity.admin.MarkDefaultIdSchemaRequest\x1a\x42.depot.devtools.auth.v0.identity.admin.MarkDefaultIdSchemaResponse\x12\x8d\x01\n\x0e\x44\x65leteIdSchema\x12<.depot.devtools.auth.v0.identity.admin.DeleteIdSchemaRequest\x1a=.depot.devtools.auth.v0.identity.admin.DeleteIdSchemaResponse\x12\x99\x01\n\x12\x43reateOAuth2Client\x12@.depot.devtools.auth.v0.identity.admin.CreateOAuth2ClientRequest\x1a\x41.depot.devtools.auth.v0.identity.admin.CreateOAuth2ClientResponse\x12\x93\x01\n\x10GetOAuth2Clients\x12>.depot.devtools.auth.v0.identity.admin.GetOAuth2ClientsRequest\x1a?.depot.devtools.auth.v0.identity.admin.GetOAuth2ClientsResponse\x12\x99\x01\n\x12UpdateOAuth2Client\x12@.depot.devtools.auth.v0.identity.admin.UpdateOAuth2ClientRequest\x1a\x41.depot.devtools.auth.v0.identity.admin.UpdateOAuth2ClientResponse\x12\x99\x01\n\x12\x44\x65leteOAuth2Client\x12@.depot.devtools.auth.v0.identity.admin.DeleteOAuth2ClientRequest\x1a\x41.depot.devtools.auth.v0.identity.admin.DeleteOAuth2ClientResponse\x12\x8d\x01\n\x0eGetEmailsSetup\x12<.depot.devtools.auth.v0.identity.admin.GetEmailsSetupRequest\x1a=.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse\x12\x96\x01\n\x11UpdateEmailsSetup\x12?.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest\x1a@.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupResponse\x12\xa2\x01\n\x15GetUserBaseStatistics\x12\x43.depot.devtools.auth.v0.identity.admin.GetUserBaseStatisticsRequest\x1a\x44.depot.devtools.auth.v0.identity.admin.GetUserBaseStatisticsResponseB\xa2\x01\n\x18\x64\x65v.auth3.identity.adminB\nAdminProtoP\x01Z\'github.com/auth3-dev/go-sdk/admin;admin\xf8\x01\x01\xa2\x02\x04\x41\x33IA\xaa\x02\x14\x41uth3.Identity.Admin\xca\x02\x14\x41uth3\\Identity\\Admin\xea\x02\x16\x41uth3::Identity::Adminb\x06proto3'
+  serialized_pb=b'\n1identity/admin/admin.proto\x12%depot.devtools.auth.v0.identity.admin\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x1cgoogle/protobuf/struct.proto\"\x86\x01\n\x15\x43reateIdentityRequest\x12+\n\x04\x64\x61ta\x18\x01 \x01(\x0b\x32\x17.google.protobuf.StructR\x04\x64\x61ta\x12#\n\rconnection_id\x18\x02 \x01(\tR\x0c\x63onnectionId\x12\x1b\n\tschema_id\x18\x03 \x01(\tR\x08schemaId\"9\n\x16\x43reateIdentityResponse\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\"R\n\x14GetIdentitiesRequest\x12\x1b\n\tpage_size\x18\x01 \x01(\x05R\x08pageSize\x12\x1d\n\npage_token\x18\x02 \x01(\tR\tpageToken\"\xae\x04\n\x15GetIdentitiesResponse\x12\x65\n\nidentities\x18\x01 \x03(\x0b\x32\x45.depot.devtools.auth.v0.identity.admin.GetIdentitiesResponse.IdentityR\nidentities\x12&\n\x0fnext_page_token\x18\x02 \x01(\tR\rnextPageToken\x12\x1d\n\ntotal_size\x18\x03 \x01(\x05R\ttotalSize\x1a\xbe\x02\n\x08Identity\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\x12\x39\n\ncreated_at\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\'\n\x0fmain_identifier\x18\x04 \x01(\tR\x0emainIdentifier\x12\x1b\n\tschema_id\x18\x05 \x01(\tR\x08schemaId\x12U\n\x04lock\x18\x06 \x01(\x0e\x32\x41.depot.devtools.auth.v0.identity.admin.GetIdentitiesResponse.LockR\x04lock\"&\n\x04Lock\x12\x0c\n\x08UNLOCKED\x10\x00\x12\x10\n\x0c\x41\x44MIN_LOCKED\x10\x01\"5\n\x12GetIdentityRequest\x12\x1f\n\x0bidentity_id\x18\x02 \x01(\tR\nidentityId\"\xed\x04\n\x13GetIdentityResponse\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\x12\x39\n\ncreated_at\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\'\n\x0fmain_identifier\x18\x04 \x01(\tR\x0emainIdentifier\x12\x1b\n\ttraits_id\x18\x05 \x01(\tR\x08traitsId\x12#\n\raddresses_ids\x18\x06 \x03(\tR\x0c\x61\x64\x64ressesIds\x12w\n\x0f\x63redentials_ids\x18\x07 \x03(\x0b\x32N.depot.devtools.auth.v0.identity.admin.GetIdentityResponse.CredentialsIdsEntryR\x0e\x63redentialsIds\x12\x1b\n\tschema_id\x18\x08 \x01(\tR\x08schemaId\x12S\n\x04lock\x18\t \x01(\x0e\x32?.depot.devtools.auth.v0.identity.admin.GetIdentityResponse.LockR\x04lock\x1a\x41\n\x13\x43redentialsIdsEntry\x12\x10\n\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n\x05value\x18\x02 \x01(\tR\x05value:\x02\x38\x01\"&\n\x04Lock\x12\x0c\n\x08UNLOCKED\x10\x00\x12\x10\n\x0c\x41\x44MIN_LOCKED\x10\x01\"y\n\x1eGetIdentityByIdentifierRequest\x12\x1c\n\tattribute\x18\x01 \x01(\tR\tattribute\x12\x14\n\x05value\x18\x02 \x01(\tR\x05value\x12#\n\rconnection_id\x18\x03 \x01(\tR\x0c\x63onnectionId\"\x9e\x06\n\x1fGetIdentityByIdentifierResponse\x12k\n\x08identity\x18\x01 \x01(\x0b\x32O.depot.devtools.auth.v0.identity.admin.GetIdentityByIdentifierResponse.IdentityR\x08identity\x1a\x8d\x05\n\x08Identity\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\x12\x39\n\ncreated_at\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\'\n\x0fmain_identifier\x18\x04 \x01(\tR\x0emainIdentifier\x12\x1b\n\ttraits_id\x18\x05 \x01(\tR\x08traitsId\x12#\n\raddresses_ids\x18\x06 \x03(\tR\x0c\x61\x64\x64ressesIds\x12\x8c\x01\n\x0f\x63redentials_ids\x18\x07 \x03(\x0b\x32\x63.depot.devtools.auth.v0.identity.admin.GetIdentityByIdentifierResponse.Identity.CredentialsIdsEntryR\x0e\x63redentialsIds\x12\x1b\n\tschema_id\x18\x08 \x01(\tR\x08schemaId\x12h\n\x04lock\x18\t \x01(\x0e\x32T.depot.devtools.auth.v0.identity.admin.GetIdentityByIdentifierResponse.Identity.LockR\x04lock\x1a\x41\n\x13\x43redentialsIdsEntry\x12\x10\n\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n\x05value\x18\x02 \x01(\tR\x05value:\x02\x38\x01\"&\n\x04Lock\x12\x0c\n\x08UNLOCKED\x10\x00\x12\x10\n\x0c\x41\x44MIN_LOCKED\x10\x01\"U\n\x1fGetIdentitiesByAttributeRequest\x12\x1c\n\tattribute\x18\x01 \x01(\tR\tattribute\x12\x14\n\x05value\x18\x02 \x01(\tR\x05value\"\xa6\x06\n GetIdentitiesByAttributeResponse\x12p\n\nidentities\x18\x01 \x03(\x0b\x32P.depot.devtools.auth.v0.identity.admin.GetIdentitiesByAttributeResponse.IdentityR\nidentities\x1a\x8f\x05\n\x08Identity\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\x12\x39\n\ncreated_at\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\'\n\x0fmain_identifier\x18\x04 \x01(\tR\x0emainIdentifier\x12\x1b\n\ttraits_id\x18\x05 \x01(\tR\x08traitsId\x12#\n\raddresses_ids\x18\x06 \x03(\tR\x0c\x61\x64\x64ressesIds\x12\x8d\x01\n\x0f\x63redentials_ids\x18\x07 \x03(\x0b\x32\x64.depot.devtools.auth.v0.identity.admin.GetIdentitiesByAttributeResponse.Identity.CredentialsIdsEntryR\x0e\x63redentialsIds\x12\x1b\n\tschema_id\x18\x08 \x01(\tR\x08schemaId\x12i\n\x04lock\x18\t \x01(\x0e\x32U.depot.devtools.auth.v0.identity.admin.GetIdentitiesByAttributeResponse.Identity.LockR\x04lock\x1a\x41\n\x13\x43redentialsIdsEntry\x12\x10\n\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n\x05value\x18\x02 \x01(\tR\x05value:\x02\x38\x01\"&\n\x04Lock\x12\x0c\n\x08UNLOCKED\x10\x00\x12\x10\n\x0c\x41\x44MIN_LOCKED\x10\x01\"\xb7\x01\n\x15UpdateIdentityRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\x12U\n\x04lock\x18\x02 \x01(\x0e\x32\x41.depot.devtools.auth.v0.identity.admin.UpdateIdentityRequest.LockR\x04lock\"&\n\x04Lock\x12\x0c\n\x08UNLOCKED\x10\x00\x12\x10\n\x0c\x41\x44MIN_LOCKED\x10\x01\"\x18\n\x16UpdateIdentityResponse\"8\n\x15\x44\x65leteIdentityRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\"\x18\n\x16\x44\x65leteIdentityResponse\"8\n\x15GetCredentialsRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\"\xa8\x04\n\x16GetCredentialsResponse\x12p\n\x0b\x63redentials\x18\x01 \x03(\x0b\x32N.depot.devtools.auth.v0.identity.admin.GetCredentialsResponse.CredentialsEntryR\x0b\x63redentials\x1a\x90\x02\n\nCredential\x12#\n\rcredential_id\x18\x01 \x01(\tR\x0c\x63redentialId\x12\x39\n\ncreated_at\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\x1f\n\x0bidentity_id\x18\x04 \x01(\tR\nidentityId\x12\x12\n\x04type\x18\x05 \x01(\x05R\x04type\x12\x12\n\x04name\x18\x06 \x01(\tR\x04name\x12\x1e\n\nconfigured\x18\x07 \x01(\x08R\nconfigured\x1a\x88\x01\n\x10\x43redentialsEntry\x12\x10\n\x03key\x18\x01 \x01(\tR\x03key\x12^\n\x05value\x18\x02 \x01(\x0b\x32H.depot.devtools.auth.v0.identity.admin.GetCredentialsResponse.CredentialR\x05value:\x02\x38\x01\"\x8c\x01\n\x17UpdateCredentialRequest\x12+\n\x04\x64\x61ta\x18\x01 \x01(\x0b\x32\x17.google.protobuf.StructR\x04\x64\x61ta\x12#\n\rconnection_id\x18\x02 \x01(\tR\x0c\x63onnectionId\x12\x1f\n\x0bidentity_id\x18\x03 \x01(\tR\nidentityId\"\x1a\n\x18UpdateCredentialResponse\"\x86\t\n\x17\x43reateConnectionRequest\x12\x12\n\x04name\x18\x01 \x01(\tR\x04name\x12\x1b\n\tclient_id\x18\x02 \x01(\tR\x08\x63lientId\x12#\n\rclient_secret\x18\x03 \x01(\tR\x0c\x63lientSecret\x12(\n\x10\x62utton_image_url\x18\x04 \x01(\tR\x0e\x62uttonImageUrl\x12\x64\n\x08provider\x18\x06 \x01(\x0e\x32H.depot.devtools.auth.v0.identity.admin.CreateConnectionRequest.ProvidersR\x08provider\x12,\n\x12oidc_discovery_url\x18\x07 \x01(\tR\x10oidcDiscoveryUrl\x12\x10\n\x03mfa\x18\x08 \x03(\tR\x03mfa\x12X\n\x04type\x18\t \x01(\x0e\x32\x44.depot.devtools.auth.v0.identity.admin.CreateConnectionRequest.TypesR\x04type\x12\x16\n\x06scopes\x18\n \x01(\tR\x06scopes\"\x93\x05\n\tProviders\x12\x08\n\x04NONE\x10\x00\x12\n\n\x06OPENID\x10\x01\x12\n\n\x06\x41MAZON\x10\x02\x12\r\n\tBITBUCKET\x10\x03\x12\x07\n\x03\x42OX\x10\x04\x12\x0f\n\x0b\x44\x41ILYMOTION\x10\x05\x12\n\n\x06\x44\x45\x45ZER\x10\x06\x12\x10\n\x0c\x44IGITALOCEAN\x10\x07\x12\x0b\n\x07\x44ISCORD\x10\x08\x12\x0b\n\x07\x44ROPBOX\x10\t\x12\r\n\tEVEONLINE\x10\n\x12\x0c\n\x08\x46\x41\x43\x45\x42OOK\x10\x0b\x12\n\n\x06\x46ITBIT\x10\x0c\x12\t\n\x05GITEA\x10\r\x12\n\n\x06GITHUB\x10\x0e\x12\n\n\x06GITLAB\x10\x0f\x12\n\n\x06GOOGLE\x10\x10\x12\x0b\n\x07SHOPIFY\x10\x12\x12\x0e\n\nSOUNDCLOUD\x10\x13\x12\x0b\n\x07SPOTIFY\x10\x14\x12\t\n\x05STEAM\x10\x15\x12\n\n\x06STRIPE\x10\x16\x12\n\n\x06TWITCH\x10\x17\x12\x08\n\x04UBER\x10\x18\x12\t\n\x05WEPAY\x10\x19\x12\t\n\x05YAHOO\x10\x1a\x12\n\n\x06YAMMER\x10\x1b\x12\n\n\x06HEROKU\x10\x1c\x12\r\n\tINSTAGRAM\x10\x1d\x12\x0c\n\x08INTERCOM\x10\x1e\x12\t\n\x05KAKAO\x10\x1f\x12\n\n\x06LASTFM\x10 \x12\x0c\n\x08LINKEDIN\x10!\x12\x08\n\x04LINE\x10\"\x12\x0c\n\x08ONEDRIVE\x10#\x12\x0b\n\x07\x41ZUREAD\x10$\x12\x13\n\x0fMICROSOFTONLINE\x10%\x12\r\n\tBATTLENET\x10&\x12\n\n\x06PAYPAL\x10\'\x12\x0b\n\x07TWITTER\x10(\x12\x0e\n\nSALESFORCE\x10)\x12\x0c\n\x08TYPETALK\x10*\x12\t\n\x05SLACK\x10+\x12\n\n\x06MEETUP\x10,\x12\x08\n\x04XERO\x10.\x12\x06\n\x02VK\x10/\x12\t\n\x05NAVER\x10\x30\x12\n\n\x06YANDEX\x10\x31\x12\r\n\tNEXTCLOUD\x10\x32\x12\t\n\x05\x41PPLE\x10\x34\x12\n\n\x06STRAVA\x10\x35\"=\n\x05Types\x12\t\n\x05UNSET\x10\x00\x12\x0c\n\x08PASSWORD\x10\x01\x12\x07\n\x03OTP\x10\x02\x12\x08\n\x04TOTP\x10\x03\x12\x08\n\x04OIDC\x10\x04\".\n\x18\x43reateConnectionResponse\x12\x12\n\x04name\x18\x01 \x01(\tR\x04name\"\x17\n\x15GetConnectionsRequest\"\xc5\x0b\n\x16GetConnectionsResponse\x12j\n\x0b\x63onnections\x18\x01 \x03(\x0b\x32H.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.ConnectionR\x0b\x63onnections\x1a\x94\x04\n\nConnection\x12\x12\n\x04name\x18\x01 \x01(\tR\x04name\x12\x1b\n\tclient_id\x18\x02 \x01(\tR\x08\x63lientId\x12#\n\rclient_secret\x18\x03 \x01(\tR\x0c\x63lientSecret\x12(\n\x10\x62utton_image_url\x18\x04 \x01(\tR\x0e\x62uttonImageUrl\x12\x63\n\x08provider\x18\x06 \x01(\x0e\x32G.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.ProvidersR\x08provider\x12,\n\x12oidc_discovery_url\x18\x07 \x01(\tR\x10oidcDiscoveryUrl\x12\x10\n\x03mfa\x18\x08 \x03(\tR\x03mfa\x12W\n\x04type\x18\t \x01(\x0e\x32\x43.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.TypesR\x04type\x12\x0e\n\x02id\x18\n \x01(\tR\x02id\x12\x16\n\x06scopes\x18\x0b \x01(\tR\x06scopes\x12`\n\x07purpose\x18\x0c \x01(\x0e\x32\x46.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.PurposesR\x07purpose\"\x93\x05\n\tProviders\x12\x08\n\x04NONE\x10\x00\x12\n\n\x06OPENID\x10\x01\x12\n\n\x06\x41MAZON\x10\x02\x12\r\n\tBITBUCKET\x10\x03\x12\x07\n\x03\x42OX\x10\x04\x12\x0f\n\x0b\x44\x41ILYMOTION\x10\x05\x12\n\n\x06\x44\x45\x45ZER\x10\x06\x12\x10\n\x0c\x44IGITALOCEAN\x10\x07\x12\x0b\n\x07\x44ISCORD\x10\x08\x12\x0b\n\x07\x44ROPBOX\x10\t\x12\r\n\tEVEONLINE\x10\n\x12\x0c\n\x08\x46\x41\x43\x45\x42OOK\x10\x0b\x12\n\n\x06\x46ITBIT\x10\x0c\x12\t\n\x05GITEA\x10\r\x12\n\n\x06GITHUB\x10\x0e\x12\n\n\x06GITLAB\x10\x0f\x12\n\n\x06GOOGLE\x10\x10\x12\x0b\n\x07SHOPIFY\x10\x12\x12\x0e\n\nSOUNDCLOUD\x10\x13\x12\x0b\n\x07SPOTIFY\x10\x14\x12\t\n\x05STEAM\x10\x15\x12\n\n\x06STRIPE\x10\x16\x12\n\n\x06TWITCH\x10\x17\x12\x08\n\x04UBER\x10\x18\x12\t\n\x05WEPAY\x10\x19\x12\t\n\x05YAHOO\x10\x1a\x12\n\n\x06YAMMER\x10\x1b\x12\n\n\x06HEROKU\x10\x1c\x12\r\n\tINSTAGRAM\x10\x1d\x12\x0c\n\x08INTERCOM\x10\x1e\x12\t\n\x05KAKAO\x10\x1f\x12\n\n\x06LASTFM\x10 \x12\x0c\n\x08LINKEDIN\x10!\x12\x08\n\x04LINE\x10\"\x12\x0c\n\x08ONEDRIVE\x10#\x12\x0b\n\x07\x41ZUREAD\x10$\x12\x13\n\x0fMICROSOFTONLINE\x10%\x12\r\n\tBATTLENET\x10&\x12\n\n\x06PAYPAL\x10\'\x12\x0b\n\x07TWITTER\x10(\x12\x0e\n\nSALESFORCE\x10)\x12\x0c\n\x08TYPETALK\x10*\x12\t\n\x05SLACK\x10+\x12\n\n\x06MEETUP\x10,\x12\x08\n\x04XERO\x10.\x12\x06\n\x02VK\x10/\x12\t\n\x05NAVER\x10\x30\x12\n\n\x06YANDEX\x10\x31\x12\r\n\tNEXTCLOUD\x10\x32\x12\t\n\x05\x41PPLE\x10\x34\x12\n\n\x06STRAVA\x10\x35\"=\n\x05Types\x12\t\n\x05UNSET\x10\x00\x12\x0c\n\x08PASSWORD\x10\x01\x12\x07\n\x03OTP\x10\x02\x12\x08\n\x04TOTP\x10\x03\x12\x08\n\x04OIDC\x10\x04\"S\n\x08Purposes\x12\x13\n\x0fPURPOSE_UNKNOWN\x10\x00\x12\x17\n\x13PURPOSE_MAIN_FACTOR\x10\x01\x12\x19\n\x15PURPOSE_SECOND_FACTOR\x10\x02\"\x88\t\n\x17UpdateConnectionRequest\x12\x1b\n\tclient_id\x18\x02 \x01(\tR\x08\x63lientId\x12#\n\rclient_secret\x18\x03 \x01(\tR\x0c\x63lientSecret\x12(\n\x10\x62utton_image_url\x18\x04 \x01(\tR\x0e\x62uttonImageUrl\x12\x64\n\x08provider\x18\x06 \x01(\x0e\x32H.depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.ProvidersR\x08provider\x12,\n\x12oidc_discovery_url\x18\x07 \x01(\tR\x10oidcDiscoveryUrl\x12\x10\n\x03mfa\x18\x08 \x03(\tR\x03mfa\x12X\n\x04type\x18\t \x01(\x0e\x32\x44.depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.TypesR\x04type\x12\x0e\n\x02id\x18\n \x01(\tR\x02id\x12\x16\n\x06scopes\x18\x0b \x01(\tR\x06scopes\"\x93\x05\n\tProviders\x12\x08\n\x04NONE\x10\x00\x12\n\n\x06OPENID\x10\x01\x12\n\n\x06\x41MAZON\x10\x02\x12\r\n\tBITBUCKET\x10\x03\x12\x07\n\x03\x42OX\x10\x04\x12\x0f\n\x0b\x44\x41ILYMOTION\x10\x05\x12\n\n\x06\x44\x45\x45ZER\x10\x06\x12\x10\n\x0c\x44IGITALOCEAN\x10\x07\x12\x0b\n\x07\x44ISCORD\x10\x08\x12\x0b\n\x07\x44ROPBOX\x10\t\x12\r\n\tEVEONLINE\x10\n\x12\x0c\n\x08\x46\x41\x43\x45\x42OOK\x10\x0b\x12\n\n\x06\x46ITBIT\x10\x0c\x12\t\n\x05GITEA\x10\r\x12\n\n\x06GITHUB\x10\x0e\x12\n\n\x06GITLAB\x10\x0f\x12\n\n\x06GOOGLE\x10\x10\x12\x0b\n\x07SHOPIFY\x10\x12\x12\x0e\n\nSOUNDCLOUD\x10\x13\x12\x0b\n\x07SPOTIFY\x10\x14\x12\t\n\x05STEAM\x10\x15\x12\n\n\x06STRIPE\x10\x16\x12\n\n\x06TWITCH\x10\x17\x12\x08\n\x04UBER\x10\x18\x12\t\n\x05WEPAY\x10\x19\x12\t\n\x05YAHOO\x10\x1a\x12\n\n\x06YAMMER\x10\x1b\x12\n\n\x06HEROKU\x10\x1c\x12\r\n\tINSTAGRAM\x10\x1d\x12\x0c\n\x08INTERCOM\x10\x1e\x12\t\n\x05KAKAO\x10\x1f\x12\n\n\x06LASTFM\x10 \x12\x0c\n\x08LINKEDIN\x10!\x12\x08\n\x04LINE\x10\"\x12\x0c\n\x08ONEDRIVE\x10#\x12\x0b\n\x07\x41ZUREAD\x10$\x12\x13\n\x0fMICROSOFTONLINE\x10%\x12\r\n\tBATTLENET\x10&\x12\n\n\x06PAYPAL\x10\'\x12\x0b\n\x07TWITTER\x10(\x12\x0e\n\nSALESFORCE\x10)\x12\x0c\n\x08TYPETALK\x10*\x12\t\n\x05SLACK\x10+\x12\n\n\x06MEETUP\x10,\x12\x08\n\x04XERO\x10.\x12\x06\n\x02VK\x10/\x12\t\n\x05NAVER\x10\x30\x12\n\n\x06YANDEX\x10\x31\x12\r\n\tNEXTCLOUD\x10\x32\x12\t\n\x05\x41PPLE\x10\x34\x12\n\n\x06STRAVA\x10\x35\"=\n\x05Types\x12\t\n\x05UNSET\x10\x00\x12\x0c\n\x08PASSWORD\x10\x01\x12\x07\n\x03OTP\x10\x02\x12\x08\n\x04TOTP\x10\x03\x12\x08\n\x04OIDC\x10\x04J\x04\x08\x01\x10\x02\"\x1a\n\x18UpdateConnectionResponse\")\n\x17\x44\x65leteConnectionRequest\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\"\x1a\n\x18\x44\x65leteConnectionResponse\"\x19\n\x17GetOAuth2ClientsRequest\"\xa1\x10\n\x18GetOAuth2ClientsResponse\x12`\n\x07\x63lients\x18\x01 \x03(\x0b\x32\x46.depot.devtools.auth.v0.identity.admin.GetOAuth2ClientsResponse.ClientR\x07\x63lients\x1a\xa2\x0f\n\x06\x43lient\x12\x30\n\x14\x61llowed_cors_origins\x18\x01 \x03(\tR\x12\x61llowedCorsOrigins\x12\x1a\n\x08\x61udience\x18\x02 \x03(\tR\x08\x61udience\x12M\n#backchannel_logout_session_required\x18\x03 \x01(\x08R backchannelLogoutSessionRequired\x12\x34\n\x16\x62\x61\x63kchannel_logout_uri\x18\x04 \x01(\tR\x14\x62\x61\x63kchannelLogoutUri\x12\x1b\n\tclient_id\x18\x05 \x01(\tR\x08\x63lientId\x12\x1f\n\x0b\x63lient_name\x18\x06 \x01(\tR\nclientName\x12\x37\n\x18\x63lient_secret_expires_at\x18\x07 \x01(\x03R\x15\x63lientSecretExpiresAt\x12\x1d\n\nclient_uri\x18\x08 \x01(\tR\tclientUri\x12\x1a\n\x08\x63ontacts\x18\t \x03(\tR\x08\x63ontacts\x12\x39\n\ncreated_at\x18\n \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12O\n$frontchannel_logout_session_required\x18\x0b \x01(\x08R!frontchannelLogoutSessionRequired\x12\x36\n\x17\x66rontchannel_logout_uri\x18\x0c \x01(\tR\x15\x66rontchannelLogoutUri\x12Q\n\x0bgrant_types\x18\r \x03(\x0e\x32\x30.depot.devtools.auth.v0.identity.admin.GrantTypeR\ngrantTypes\x12+\n\x04jwks\x18\x0e \x01(\x0b\x32\x17.google.protobuf.StructR\x04jwks\x12\x19\n\x08jwks_uri\x18\x0f \x01(\tR\x07jwksUri\x12\x19\n\x08logo_uri\x18\x10 \x01(\tR\x07logoUri\x12\x33\n\x08metadata\x18\x11 \x01(\x0b\x32\x17.google.protobuf.StructR\x08metadata\x12\x14\n\x05owner\x18\x12 \x01(\tR\x05owner\x12\x1d\n\npolicy_uri\x18\x13 \x01(\tR\tpolicyUri\x12\x39\n\x19post_logout_redirect_uris\x18\x14 \x03(\tR\x16postLogoutRedirectUris\x12#\n\rredirect_uris\x18\x15 \x03(\tR\x0credirectUris\x12{\n\x1arequest_object_signing_alg\x18\x16 \x01(\x0e\x32>.depot.devtools.auth.v0.identity.admin.RequestObjectSigningAlgR\x17requestObjectSigningAlg\x12!\n\x0crequest_uris\x18\x17 \x03(\tR\x0brequestUris\x12Z\n\x0eresponse_types\x18\x18 \x03(\x0e\x32\x33.depot.devtools.auth.v0.identity.admin.ResponseTypeR\rresponseTypes\x12\x14\n\x05scope\x18\x19 \x01(\tR\x05scope\x12\x32\n\x15sector_identifier_uri\x18\x1a \x01(\tR\x13sectorIdentifierUri\x12U\n\x0csubject_type\x18\x1b \x01(\x0e\x32\x32.depot.devtools.auth.v0.identity.admin.SubjectTypeR\x0bsubjectType\x12{\n\x1atoken_endpoint_auth_method\x18\x1c \x01(\x0e\x32>.depot.devtools.auth.v0.identity.admin.TokenEndpointAuthMethodR\x17tokenEndpointAuthMethod\x12\x88\x01\n\x1ftoken_endpoint_auth_signing_alg\x18\x1d \x01(\x0e\x32\x42.depot.devtools.auth.v0.identity.admin.TokenEndpointAuthSigningAlgR\x1btokenEndpointAuthSigningAlg\x12\x17\n\x07tos_uri\x18\x1e \x01(\tR\x06tosUri\x12\x39\n\nupdated_at\x18\x1f \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\x81\x01\n\x1cuserinfo_signed_response_alg\x18  \x01(\x0e\x32@.depot.devtools.auth.v0.identity.admin.UserinfoSignedResponseAlgR\x19userinfoSignedResponseAlg\x12R\n\x0b\x63lient_type\x18! \x01(\x0e\x32\x31.depot.devtools.auth.v0.identity.admin.ClientTypeR\nclientType\"\x8e\x0e\n\x19\x43reateOAuth2ClientRequest\x12\x30\n\x14\x61llowed_cors_origins\x18\x01 \x03(\tR\x12\x61llowedCorsOrigins\x12\x1a\n\x08\x61udience\x18\x02 \x03(\tR\x08\x61udience\x12M\n#backchannel_logout_session_required\x18\x03 \x01(\x08R backchannelLogoutSessionRequired\x12\x34\n\x16\x62\x61\x63kchannel_logout_uri\x18\x04 \x01(\tR\x14\x62\x61\x63kchannelLogoutUri\x12\x1f\n\x0b\x63lient_name\x18\x06 \x01(\tR\nclientName\x12\x1d\n\nclient_uri\x18\x08 \x01(\tR\tclientUri\x12\x1a\n\x08\x63ontacts\x18\t \x03(\tR\x08\x63ontacts\x12O\n$frontchannel_logout_session_required\x18\x0b \x01(\x08R!frontchannelLogoutSessionRequired\x12\x36\n\x17\x66rontchannel_logout_uri\x18\x0c \x01(\tR\x15\x66rontchannelLogoutUri\x12Q\n\x0bgrant_types\x18\r \x03(\x0e\x32\x30.depot.devtools.auth.v0.identity.admin.GrantTypeR\ngrantTypes\x12+\n\x04jwks\x18\x0e \x01(\x0b\x32\x17.google.protobuf.StructR\x04jwks\x12\x19\n\x08jwks_uri\x18\x0f \x01(\tR\x07jwksUri\x12\x19\n\x08logo_uri\x18\x10 \x01(\tR\x07logoUri\x12\x33\n\x08metadata\x18\x11 \x01(\x0b\x32\x17.google.protobuf.StructR\x08metadata\x12\x14\n\x05owner\x18\x12 \x01(\tR\x05owner\x12\x1d\n\npolicy_uri\x18\x13 \x01(\tR\tpolicyUri\x12\x39\n\x19post_logout_redirect_uris\x18\x14 \x03(\tR\x16postLogoutRedirectUris\x12#\n\rredirect_uris\x18\x15 \x03(\tR\x0credirectUris\x12{\n\x1arequest_object_signing_alg\x18\x16 \x01(\x0e\x32>.depot.devtools.auth.v0.identity.admin.RequestObjectSigningAlgR\x17requestObjectSigningAlg\x12!\n\x0crequest_uris\x18\x17 \x03(\tR\x0brequestUris\x12Z\n\x0eresponse_types\x18\x18 \x03(\x0e\x32\x33.depot.devtools.auth.v0.identity.admin.ResponseTypeR\rresponseTypes\x12\x14\n\x05scope\x18\x19 \x01(\tR\x05scope\x12\x32\n\x15sector_identifier_uri\x18\x1a \x01(\tR\x13sectorIdentifierUri\x12U\n\x0csubject_type\x18\x1b \x01(\x0e\x32\x32.depot.devtools.auth.v0.identity.admin.SubjectTypeR\x0bsubjectType\x12{\n\x1atoken_endpoint_auth_method\x18\x1c \x01(\x0e\x32>.depot.devtools.auth.v0.identity.admin.TokenEndpointAuthMethodR\x17tokenEndpointAuthMethod\x12\x88\x01\n\x1ftoken_endpoint_auth_signing_alg\x18\x1d \x01(\x0e\x32\x42.depot.devtools.auth.v0.identity.admin.TokenEndpointAuthSigningAlgR\x1btokenEndpointAuthSigningAlg\x12\x17\n\x07tos_uri\x18\x1e \x01(\tR\x06tosUri\x12\x81\x01\n\x1cuserinfo_signed_response_alg\x18\x1f \x01(\x0e\x32@.depot.devtools.auth.v0.identity.admin.UserinfoSignedResponseAlgR\x19userinfoSignedResponseAlg\x12#\n\rclient_secret\x18  \x01(\tR\x0c\x63lientSecret\x12R\n\x0b\x63lient_type\x18! \x01(\x0e\x32\x31.depot.devtools.auth.v0.identity.admin.ClientTypeR\nclientType\"^\n\x1a\x43reateOAuth2ClientResponse\x12\x1b\n\tclient_id\x18\x01 \x01(\tR\x08\x63lientId\x12#\n\rclient_secret\x18\x02 \x01(\tR\x0c\x63lientSecret\"\xd7\r\n\x19UpdateOAuth2ClientRequest\x12\x30\n\x14\x61llowed_cors_origins\x18\x01 \x03(\tR\x12\x61llowedCorsOrigins\x12\x1a\n\x08\x61udience\x18\x02 \x03(\tR\x08\x61udience\x12M\n#backchannel_logout_session_required\x18\x03 \x01(\x08R backchannelLogoutSessionRequired\x12\x34\n\x16\x62\x61\x63kchannel_logout_uri\x18\x04 \x01(\tR\x14\x62\x61\x63kchannelLogoutUri\x12\x1f\n\x0b\x63lient_name\x18\x06 \x01(\tR\nclientName\x12\x1d\n\nclient_uri\x18\x08 \x01(\tR\tclientUri\x12\x1a\n\x08\x63ontacts\x18\t \x03(\tR\x08\x63ontacts\x12O\n$frontchannel_logout_session_required\x18\x0b \x01(\x08R!frontchannelLogoutSessionRequired\x12\x36\n\x17\x66rontchannel_logout_uri\x18\x0c \x01(\tR\x15\x66rontchannelLogoutUri\x12Q\n\x0bgrant_types\x18\r \x03(\x0e\x32\x30.depot.devtools.auth.v0.identity.admin.GrantTypeR\ngrantTypes\x12+\n\x04jwks\x18\x0e \x01(\x0b\x32\x17.google.protobuf.StructR\x04jwks\x12\x19\n\x08jwks_uri\x18\x0f \x01(\tR\x07jwksUri\x12\x19\n\x08logo_uri\x18\x10 \x01(\tR\x07logoUri\x12\x33\n\x08metadata\x18\x11 \x01(\x0b\x32\x17.google.protobuf.StructR\x08metadata\x12\x14\n\x05owner\x18\x12 \x01(\tR\x05owner\x12\x1d\n\npolicy_uri\x18\x13 \x01(\tR\tpolicyUri\x12\x39\n\x19post_logout_redirect_uris\x18\x14 \x03(\tR\x16postLogoutRedirectUris\x12#\n\rredirect_uris\x18\x15 \x03(\tR\x0credirectUris\x12{\n\x1arequest_object_signing_alg\x18\x16 \x01(\x0e\x32>.depot.devtools.auth.v0.identity.admin.RequestObjectSigningAlgR\x17requestObjectSigningAlg\x12!\n\x0crequest_uris\x18\x17 \x03(\tR\x0brequestUris\x12Z\n\x0eresponse_types\x18\x18 \x03(\x0e\x32\x33.depot.devtools.auth.v0.identity.admin.ResponseTypeR\rresponseTypes\x12\x14\n\x05scope\x18\x19 \x01(\tR\x05scope\x12\x32\n\x15sector_identifier_uri\x18\x1a \x01(\tR\x13sectorIdentifierUri\x12U\n\x0csubject_type\x18\x1b \x01(\x0e\x32\x32.depot.devtools.auth.v0.identity.admin.SubjectTypeR\x0bsubjectType\x12{\n\x1atoken_endpoint_auth_method\x18\x1c \x01(\x0e\x32>.depot.devtools.auth.v0.identity.admin.TokenEndpointAuthMethodR\x17tokenEndpointAuthMethod\x12\x88\x01\n\x1ftoken_endpoint_auth_signing_alg\x18\x1d \x01(\x0e\x32\x42.depot.devtools.auth.v0.identity.admin.TokenEndpointAuthSigningAlgR\x1btokenEndpointAuthSigningAlg\x12\x17\n\x07tos_uri\x18\x1e \x01(\tR\x06tosUri\x12\x81\x01\n\x1cuserinfo_signed_response_alg\x18\x1f \x01(\x0e\x32@.depot.devtools.auth.v0.identity.admin.UserinfoSignedResponseAlgR\x19userinfoSignedResponseAlg\x12#\n\rclient_secret\x18  \x01(\tR\x0c\x63lientSecret\x12\x1b\n\tclient_id\x18! \x01(\tR\x08\x63lientId\"^\n\x1aUpdateOAuth2ClientResponse\x12\x1b\n\tclient_id\x18\x01 \x01(\tR\x08\x63lientId\x12#\n\rclient_secret\x18\x02 \x01(\tR\x0c\x63lientSecret\"8\n\x19\x44\x65leteOAuth2ClientRequest\x12\x1b\n\tclient_id\x18\x01 \x01(\tR\x08\x63lientId\"\x1c\n\x1a\x44\x65leteOAuth2ClientResponse\"6\n\x13GetAddressesRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\"\xa4\x02\n\x14GetAddressesResponse\x12\x61\n\taddresses\x18\x01 \x03(\x0b\x32\x43.depot.devtools.auth.v0.identity.admin.GetAddressesResponse.AddressR\taddresses\x1a\xa8\x01\n\x07\x41\x64\x64ress\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x1f\n\x0bidentity_id\x18\x02 \x01(\tR\nidentityId\x12\x12\n\x04name\x18\x03 \x01(\tR\x04name\x12\x18\n\x07\x61\x64\x64ress\x18\x04 \x01(\tR\x07\x61\x64\x64ress\x12\x1a\n\x08verified\x18\x05 \x01(\x08R\x08verified\x12\"\n\rid_schema_key\x18\x06 \x01(\tR\x0bidSchemaKey\"T\n\x11GetAddressRequest\x12\x10\n\x02id\x18\x01 \x01(\tH\x00R\x02id\x12$\n\x0cverification\x18\x02 \x01(\tH\x00R\x0cverificationB\x07\n\x05match\"\xb3\x01\n\x12GetAddressResponse\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x1f\n\x0bidentity_id\x18\x02 \x01(\tR\nidentityId\x12\x12\n\x04name\x18\x03 \x01(\tR\x04name\x12\x18\n\x07\x61\x64\x64ress\x18\x04 \x01(\tR\x07\x61\x64\x64ress\x12\x1a\n\x08verified\x18\x05 \x01(\x08R\x08verified\x12\"\n\rid_schema_key\x18\x06 \x01(\tR\x0bidSchemaKey\"m\n\x14UpdateAddressRequest\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x1c\n\x08verified\x18\x02 \x01(\x08H\x00R\x08verified\x12\x1a\n\x07\x61\x64\x64ress\x18\x03 \x01(\tH\x00R\x07\x61\x64\x64ressB\x0b\n\tattribute\"\x17\n\x15UpdateAddressResponse\"3\n\x10GetTraitsRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\"+\n\x11GetTraitsResponse\x12\x16\n\x06traits\x18\x01 \x01(\tR\x06traits\"N\n\x13UpdateTraitsRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\x12\x16\n\x06traits\x18\x02 \x01(\tR\x06traits\"\x16\n\x14UpdateTraitsResponse\"B\n\x1fGetIdentityLoginAttemptsRequest\x12\x1f\n\x0bidentity_id\x18\x01 \x01(\tR\nidentityId\"\x91\x03\n GetIdentityLoginAttemptsResponse\x12k\n\x08\x61ttempts\x18\x01 \x03(\x0b\x32O.depot.devtools.auth.v0.identity.admin.GetIdentityLoginAttemptsResponse.AttemptR\x08\x61ttempts\x1a\xff\x01\n\x07\x41ttempt\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x1f\n\x0bidentity_id\x18\x02 \x01(\tR\nidentityId\x12\x16\n\x06status\x18\x03 \x01(\tR\x06status\x12\x35\n\x16\x61uthentication_methods\x18\x04 \x03(\tR\x15\x61uthenticationMethods\x12\x39\n\ncreated_at\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nexpires_at\x18\x06 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\texpiresAt\"^\n\x15\x43reateIdSchemaRequest\x12\x12\n\x04name\x18\x01 \x01(\tR\x04name\x12\x31\n\x07\x63ontent\x18\x02 \x01(\x0b\x32\x17.google.protobuf.StructR\x07\x63ontent\"(\n\x16\x43reateIdSchemaResponse\x12\x0e\n\x02id\x18\x02 \x01(\tR\x02id\"\x15\n\x13GetIdSchemasRequest\"\xfb\x02\n\x14GetIdSchemasResponse\x12h\n\x0bjsonschemas\x18\x01 \x03(\x0b\x32\x46.depot.devtools.auth.v0.identity.admin.GetIdSchemasResponse.JsonSchemaR\x0bjsonschemas\x1a\xf8\x01\n\nJsonSchema\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n\x04name\x18\x02 \x01(\tR\x04name\x12\x31\n\x07\x63ontent\x18\x03 \x01(\x0b\x32\x17.google.protobuf.StructR\x07\x63ontent\x12\x39\n\ncreated_at\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\x1d\n\nis_default\x18\x06 \x01(\x08R\tisDefault\"$\n\x12GetIdSchemaRequest\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\"\x81\x02\n\x13GetIdSchemaResponse\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n\x04name\x18\x02 \x01(\tR\x04name\x12\x31\n\x07\x63ontent\x18\x03 \x01(\x0b\x32\x17.google.protobuf.StructR\x07\x63ontent\x12\x39\n\ncreated_at\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\x1d\n\nis_default\x18\x06 \x01(\x08R\tisDefault\"\x1b\n\x19GetDefaultIdSchemaRequest\"\x88\x02\n\x1aGetDefaultIdSchemaResponse\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n\x04name\x18\x02 \x01(\tR\x04name\x12\x31\n\x07\x63ontent\x18\x03 \x01(\x0b\x32\x17.google.protobuf.StructR\x07\x63ontent\x12\x39\n\ncreated_at\x18\x04 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tcreatedAt\x12\x39\n\nupdated_at\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\tupdatedAt\x12\x1d\n\nis_default\x18\x06 \x01(\x08R\tisDefault\"n\n\x15UpdateIdSchemaRequest\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n\x04name\x18\x02 \x01(\tR\x04name\x12\x31\n\x07\x63ontent\x18\x03 \x01(\x0b\x32\x17.google.protobuf.StructR\x07\x63ontent\"\x18\n\x16UpdateIdSchemaResponse\",\n\x1aMarkDefaultIdSchemaRequest\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\"\x1d\n\x1bMarkDefaultIdSchemaResponse\"\'\n\x15\x44\x65leteIdSchemaRequest\x12\x0e\n\x02id\x18\x01 \x01(\tR\x02id\"\x18\n\x16\x44\x65leteIdSchemaResponse\"\x17\n\x15GetEmailsSetupRequest\"\xcc\x07\n\x16GetEmailsSetupResponse\x12\x65\n\x07welcome\x18\x01 \x01(\x0b\x32K.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse.EmailTemplateR\x07welcome\x12~\n\x14\x61\x63\x63ount_verification\x18\x02 \x01(\x0b\x32K.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse.EmailTemplateR\x13\x61\x63\x63ountVerification\x12v\n\x10\x61\x63\x63ount_recovery\x18\x03 \x01(\x0b\x32K.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse.EmailTemplateR\x0f\x61\x63\x63ountRecovery\x12x\n\x11\x61\x63\x63ount_recovered\x18\x04 \x01(\x0b\x32K.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse.EmailTemplateR\x10\x61\x63\x63ountRecovered\x12]\n\x03otp\x18\x05 \x01(\x0b\x32K.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse.EmailTemplateR\x03otp\x12]\n\x04smtp\x18\x06 \x01(\x0b\x32I.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse.EmailSenderR\x04smtp\x12\x1d\n\nproject_id\x18\x07 \x01(\tR\tprojectId\x1a\x43\n\rEmailTemplate\x12\x18\n\x07\x63ontent\x18\x03 \x01(\tR\x07\x63ontent\x12\x18\n\x07subject\x18\x04 \x01(\tR\x07subject\x1a\xb6\x01\n\x0b\x45mailSender\x12#\n\remail_address\x18\x01 \x01(\tR\x0c\x65mailAddress\x12\x1b\n\tsmtp_host\x18\x02 \x01(\tR\x08smtpHost\x12\x1b\n\tsmtp_port\x18\x03 \x01(\rR\x08smtpPort\x12#\n\rsmtp_username\x18\x04 \x01(\tR\x0csmtpUsername\x12#\n\rsmtp_password\x18\x05 \x01(\tR\x0csmtpPassword\"\xbc\x07\n\x18UpdateEmailsSetupRequest\x12g\n\x07welcome\x18\x01 \x01(\x0b\x32M.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest.EmailTemplateR\x07welcome\x12\x80\x01\n\x14\x61\x63\x63ount_verification\x18\x02 \x01(\x0b\x32M.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest.EmailTemplateR\x13\x61\x63\x63ountVerification\x12x\n\x10\x61\x63\x63ount_recovery\x18\x03 \x01(\x0b\x32M.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest.EmailTemplateR\x0f\x61\x63\x63ountRecovery\x12z\n\x11\x61\x63\x63ount_recovered\x18\x04 \x01(\x0b\x32M.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest.EmailTemplateR\x10\x61\x63\x63ountRecovered\x12_\n\x03otp\x18\x05 \x01(\x0b\x32M.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest.EmailTemplateR\x03otp\x12_\n\x04smtp\x18\x06 \x01(\x0b\x32K.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest.EmailSenderR\x04smtp\x1a\x43\n\rEmailTemplate\x12\x18\n\x07\x63ontent\x18\x01 \x01(\tR\x07\x63ontent\x12\x18\n\x07subject\x18\x02 \x01(\tR\x07subject\x1a\xb6\x01\n\x0b\x45mailSender\x12#\n\remail_address\x18\x01 \x01(\tR\x0c\x65mailAddress\x12\x1b\n\tsmtp_host\x18\x02 \x01(\tR\x08smtpHost\x12\x1b\n\tsmtp_port\x18\x03 \x01(\rR\x08smtpPort\x12#\n\rsmtp_username\x18\x04 \x01(\tR\x0csmtpUsername\x12#\n\rsmtp_password\x18\x05 \x01(\tR\x0csmtpPassword\"\x1b\n\x19UpdateEmailsSetupResponse\"\xcb\x01\n\x1cGetUserBaseStatisticsRequest\x12\x1f\n\x0b\x64\x61ys_before\x18\x01 \x01(\rR\ndaysBefore\x12\x46\n\x11lifetime_start_at\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\x0flifetimeStartAt\x12\x42\n\x0flifetime_end_at\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.TimestampR\rlifetimeEndAt\"\xa1\x04\n\x1dGetUserBaseStatisticsResponse\x12\x1f\n\x0btotal_users\x18\x01 \x01(\x05R\ntotalUsers\x12y\n\rusers_per_day\x18\x02 \x03(\x0b\x32U.depot.devtools.auth.v0.identity.admin.GetUserBaseStatisticsResponse.UsersPerDayEntryR\x0busersPerDay\x12\x82\x01\n\x10sessions_per_day\x18\x03 \x03(\x0b\x32X.depot.devtools.auth.v0.identity.admin.GetUserBaseStatisticsResponse.SessionsPerDayEntryR\x0esessionsPerDay\x12,\n\x12total_active_users\x18\x04 \x01(\x05R\x10totalActiveUsers\x12.\n\x13total_lifetime_used\x18\x05 \x01(\x01R\x11totalLifetimeUsed\x1a>\n\x10UsersPerDayEntry\x12\x10\n\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n\x05value\x18\x02 \x01(\x05R\x05value:\x02\x38\x01\x1a\x41\n\x13SessionsPerDayEntry\x12\x10\n\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n\x05value\x18\x02 \x01(\x05R\x05value:\x02\x38\x01*l\n\nClientType\x12\x15\n\x11\x43LIENT_TYPE_UNSET\x10\x00\x12\x16\n\x12\x43LIENT_FIRST_PARTY\x10\x01\x12\x16\n\x12\x43LIENT_THIRD_PARTY\x10\x02\x12\x17\n\x13\x43LIENT_SYSTEM_PARTY\x10\x03*A\n\x0bSubjectType\x12\x17\n\x13SUBJECT_TYPE_PUBLIC\x10\x00\x12\x19\n\x15SUBJECT_TYPE_PAIRWISE\x10\x01*\xd5\x01\n\x17TokenEndpointAuthMethod\x12\x32\n.TOKEN_ENDPOINT_AUTH_METHOD_CLIENT_SECRET_BASIC\x10\x00\x12\x31\n-TOKEN_ENDPOINT_AUTH_METHOD_CLIENT_SECRET_POST\x10\x01\x12.\n*TOKEN_ENDPOINT_AUTH_METHOD_PRIVATE_KEY_JWT\x10\x02\x12#\n\x1fTOKEN_ENDPOINT_AUTH_METHOD_NONE\x10\x03*\xcb\x03\n\x1bTokenEndpointAuthSigningAlg\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_UNSET\x10\x00\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_RS256\x10\x01\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_RS384\x10\x02\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_RS512\x10\x03\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_PS256\x10\x04\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_PS384\x10\x05\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_PS512\x10\x06\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_ES256\x10\x07\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_ES384\x10\x08\x12)\n%TOKEN_ENDPOINT_AUTH_SIGNING_ALG_ES512\x10\t*\xba\x01\n\tGrantType\x12\x14\n\x10GRANT_TYPE_UNSET\x10\x00\x12!\n\x1dGRANT_TYPE_CLIENT_CREDENTIALS\x10\x01\x12!\n\x1dGRANT_TYPE_AUTHORIZATION_CODE\x10\x02\x12\x17\n\x13GRANT_TYPE_IMPLICIT\x10\x03\x12\x1c\n\x18GRANT_TYPE_REFRESH_TOKEN\x10\x04\x12\x1a\n\x16GRANT_TYPE_DEVICE_CODE\x10\x05*\x94\x02\n\x0cResponseType\x12\x17\n\x13RESPONSE_TYPE_UNSET\x10\x00\x12\x16\n\x12RESPONSE_TYPE_NONE\x10\x01\x12\x1a\n\x16RESPONSE_TYPE_ID_TOKEN\x10\x02\x12\x17\n\x13RESPONSE_TYPE_TOKEN\x10\x03\x12\x16\n\x12RESPONSE_TYPE_CODE\x10\x04\x12 \n\x1cRESPONSE_TYPE_ID_TOKEN_TOKEN\x10\x05\x12\x1f\n\x1bRESPONSE_TYPE_CODE_ID_TOKEN\x10\x06\x12\x1c\n\x18RESPONSE_TYPE_CODE_TOKEN\x10\x07\x12%\n!RESPONSE_TYPE_CODE_ID_TOKEN_TOKEN\x10\x08*\x8a\x01\n\x17RequestObjectSigningAlg\x12$\n REQUEST_OBJECT_SIGNING_ALG_UNSET\x10\x00\x12#\n\x1fREQUEST_OBJECT_SIGNING_ALG_NONE\x10\x01\x12$\n REQUEST_OBJECT_SIGNING_ALG_RS256\x10\x02*\x92\x01\n\x19UserinfoSignedResponseAlg\x12&\n\"USERINFO_SIGNED_RESPONSE_ALG_UNSET\x10\x00\x12%\n!USERINFO_SIGNED_RESPONSE_ALG_NONE\x10\x01\x12&\n\"USERINFO_SIGNED_RESPONSE_ALG_RS256\x10\x02\x32\xa3&\n\x05\x41\x64min\x12\x8d\x01\n\x0e\x43reateIdentity\x12<.depot.devtools.auth.v0.identity.admin.CreateIdentityRequest\x1a=.depot.devtools.auth.v0.identity.admin.CreateIdentityResponse\x12\x84\x01\n\x0bGetIdentity\x12\x39.depot.devtools.auth.v0.identity.admin.GetIdentityRequest\x1a:.depot.devtools.auth.v0.identity.admin.GetIdentityResponse\x12\xa8\x01\n\x17GetIdentityByIdentifier\x12\x45.depot.devtools.auth.v0.identity.admin.GetIdentityByIdentifierRequest\x1a\x46.depot.devtools.auth.v0.identity.admin.GetIdentityByIdentifierResponse\x12\xab\x01\n\x18GetIdentitiesByAttribute\x12\x46.depot.devtools.auth.v0.identity.admin.GetIdentitiesByAttributeRequest\x1aG.depot.devtools.auth.v0.identity.admin.GetIdentitiesByAttributeResponse\x12\x8a\x01\n\rGetIdentities\x12;.depot.devtools.auth.v0.identity.admin.GetIdentitiesRequest\x1a<.depot.devtools.auth.v0.identity.admin.GetIdentitiesResponse\x12\x8d\x01\n\x0eUpdateIdentity\x12<.depot.devtools.auth.v0.identity.admin.UpdateIdentityRequest\x1a=.depot.devtools.auth.v0.identity.admin.UpdateIdentityResponse\x12\x8d\x01\n\x0e\x44\x65leteIdentity\x12<.depot.devtools.auth.v0.identity.admin.DeleteIdentityRequest\x1a=.depot.devtools.auth.v0.identity.admin.DeleteIdentityResponse\x12\x87\x01\n\x0cGetAddresses\x12:.depot.devtools.auth.v0.identity.admin.GetAddressesRequest\x1a;.depot.devtools.auth.v0.identity.admin.GetAddressesResponse\x12\x81\x01\n\nGetAddress\x12\x38.depot.devtools.auth.v0.identity.admin.GetAddressRequest\x1a\x39.depot.devtools.auth.v0.identity.admin.GetAddressResponse\x12\x8a\x01\n\rUpdateAddress\x12;.depot.devtools.auth.v0.identity.admin.UpdateAddressRequest\x1a<.depot.devtools.auth.v0.identity.admin.UpdateAddressResponse\x12~\n\tGetTraits\x12\x37.depot.devtools.auth.v0.identity.admin.GetTraitsRequest\x1a\x38.depot.devtools.auth.v0.identity.admin.GetTraitsResponse\x12\x87\x01\n\x0cUpdateTraits\x12:.depot.devtools.auth.v0.identity.admin.UpdateTraitsRequest\x1a;.depot.devtools.auth.v0.identity.admin.UpdateTraitsResponse\x12\x8d\x01\n\x0eGetCredentials\x12<.depot.devtools.auth.v0.identity.admin.GetCredentialsRequest\x1a=.depot.devtools.auth.v0.identity.admin.GetCredentialsResponse\x12\x93\x01\n\x10UpdateCredential\x12>.depot.devtools.auth.v0.identity.admin.UpdateCredentialRequest\x1a?.depot.devtools.auth.v0.identity.admin.UpdateCredentialResponse\x12\xab\x01\n\x18GetIdentityLoginAttempts\x12\x46.depot.devtools.auth.v0.identity.admin.GetIdentityLoginAttemptsRequest\x1aG.depot.devtools.auth.v0.identity.admin.GetIdentityLoginAttemptsResponse\x12\x93\x01\n\x10\x43reateConnection\x12>.depot.devtools.auth.v0.identity.admin.CreateConnectionRequest\x1a?.depot.devtools.auth.v0.identity.admin.CreateConnectionResponse\x12\x8d\x01\n\x0eGetConnections\x12<.depot.devtools.auth.v0.identity.admin.GetConnectionsRequest\x1a=.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse\x12\x93\x01\n\x10UpdateConnection\x12>.depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest\x1a?.depot.devtools.auth.v0.identity.admin.UpdateConnectionResponse\x12\x93\x01\n\x10\x44\x65leteConnection\x12>.depot.devtools.auth.v0.identity.admin.DeleteConnectionRequest\x1a?.depot.devtools.auth.v0.identity.admin.DeleteConnectionResponse\x12\x8d\x01\n\x0e\x43reateIdSchema\x12<.depot.devtools.auth.v0.identity.admin.CreateIdSchemaRequest\x1a=.depot.devtools.auth.v0.identity.admin.CreateIdSchemaResponse\x12\x87\x01\n\x0cGetIdSchemas\x12:.depot.devtools.auth.v0.identity.admin.GetIdSchemasRequest\x1a;.depot.devtools.auth.v0.identity.admin.GetIdSchemasResponse\x12\x84\x01\n\x0bGetIdSchema\x12\x39.depot.devtools.auth.v0.identity.admin.GetIdSchemaRequest\x1a:.depot.devtools.auth.v0.identity.admin.GetIdSchemaResponse\x12\x99\x01\n\x12GetDefaultIdSchema\x12@.depot.devtools.auth.v0.identity.admin.GetDefaultIdSchemaRequest\x1a\x41.depot.devtools.auth.v0.identity.admin.GetDefaultIdSchemaResponse\x12\x8d\x01\n\x0eUpdateIdSchema\x12<.depot.devtools.auth.v0.identity.admin.UpdateIdSchemaRequest\x1a=.depot.devtools.auth.v0.identity.admin.UpdateIdSchemaResponse\x12\x9c\x01\n\x13MarkDefaultIdSchema\x12\x41.depot.devtools.auth.v0.identity.admin.MarkDefaultIdSchemaRequest\x1a\x42.depot.devtools.auth.v0.identity.admin.MarkDefaultIdSchemaResponse\x12\x8d\x01\n\x0e\x44\x65leteIdSchema\x12<.depot.devtools.auth.v0.identity.admin.DeleteIdSchemaRequest\x1a=.depot.devtools.auth.v0.identity.admin.DeleteIdSchemaResponse\x12\x99\x01\n\x12\x43reateOAuth2Client\x12@.depot.devtools.auth.v0.identity.admin.CreateOAuth2ClientRequest\x1a\x41.depot.devtools.auth.v0.identity.admin.CreateOAuth2ClientResponse\x12\x93\x01\n\x10GetOAuth2Clients\x12>.depot.devtools.auth.v0.identity.admin.GetOAuth2ClientsRequest\x1a?.depot.devtools.auth.v0.identity.admin.GetOAuth2ClientsResponse\x12\x99\x01\n\x12UpdateOAuth2Client\x12@.depot.devtools.auth.v0.identity.admin.UpdateOAuth2ClientRequest\x1a\x41.depot.devtools.auth.v0.identity.admin.UpdateOAuth2ClientResponse\x12\x99\x01\n\x12\x44\x65leteOAuth2Client\x12@.depot.devtools.auth.v0.identity.admin.DeleteOAuth2ClientRequest\x1a\x41.depot.devtools.auth.v0.identity.admin.DeleteOAuth2ClientResponse\x12\x8d\x01\n\x0eGetEmailsSetup\x12<.depot.devtools.auth.v0.identity.admin.GetEmailsSetupRequest\x1a=.depot.devtools.auth.v0.identity.admin.GetEmailsSetupResponse\x12\x96\x01\n\x11UpdateEmailsSetup\x12?.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupRequest\x1a@.depot.devtools.auth.v0.identity.admin.UpdateEmailsSetupResponse\x12\xa2\x01\n\x15GetUserBaseStatistics\x12\x43.depot.devtools.auth.v0.identity.admin.GetUserBaseStatisticsRequest\x1a\x44.depot.devtools.auth.v0.identity.admin.GetUserBaseStatisticsResponseB\xa2\x01\n\x18\x64\x65v.auth3.identity.adminB\nAdminProtoP\x01Z\'github.com/auth3-dev/go-sdk/admin;admin\xf8\x01\x01\xa2\x02\x04\x41\x33IA\xaa\x02\x14\x41uth3.Identity.Admin\xca\x02\x14\x41uth3\\Identity\\Admin\xea\x02\x16\x41uth3::Identity::Adminb\x06proto3'
   ,
   dependencies=[google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR,google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,])
 
@@ -56,8 +56,8 @@ _CLIENTTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=20109,
-  serialized_end=20217,
+  serialized_start=20095,
+  serialized_end=20203,
 )
 _sym_db.RegisterEnumDescriptor(_CLIENTTYPE)
 
@@ -82,8 +82,8 @@ _SUBJECTTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=20219,
-  serialized_end=20284,
+  serialized_start=20205,
+  serialized_end=20270,
 )
 _sym_db.RegisterEnumDescriptor(_SUBJECTTYPE)
 
@@ -118,8 +118,8 @@ _TOKENENDPOINTAUTHMETHOD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=20287,
-  serialized_end=20500,
+  serialized_start=20273,
+  serialized_end=20486,
 )
 _sym_db.RegisterEnumDescriptor(_TOKENENDPOINTAUTHMETHOD)
 
@@ -184,8 +184,8 @@ _TOKENENDPOINTAUTHSIGNINGALG = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=20503,
-  serialized_end=20962,
+  serialized_start=20489,
+  serialized_end=20948,
 )
 _sym_db.RegisterEnumDescriptor(_TOKENENDPOINTAUTHSIGNINGALG)
 
@@ -230,8 +230,8 @@ _GRANTTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=20965,
-  serialized_end=21151,
+  serialized_start=20951,
+  serialized_end=21137,
 )
 _sym_db.RegisterEnumDescriptor(_GRANTTYPE)
 
@@ -291,8 +291,8 @@ _RESPONSETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=21154,
-  serialized_end=21430,
+  serialized_start=21140,
+  serialized_end=21416,
 )
 _sym_db.RegisterEnumDescriptor(_RESPONSETYPE)
 
@@ -322,8 +322,8 @@ _REQUESTOBJECTSIGNINGALG = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=21433,
-  serialized_end=21571,
+  serialized_start=21419,
+  serialized_end=21557,
 )
 _sym_db.RegisterEnumDescriptor(_REQUESTOBJECTSIGNINGALG)
 
@@ -353,8 +353,8 @@ _USERINFOSIGNEDRESPONSEALG = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=21574,
-  serialized_end=21720,
+  serialized_start=21560,
+  serialized_end=21706,
 )
 _sym_db.RegisterEnumDescriptor(_USERINFOSIGNEDRESPONSEALG)
 
@@ -2938,70 +2938,63 @@ _UPDATECONNECTIONREQUEST = _descriptor.Descriptor(
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='name', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.name', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, json_name='name', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='client_id', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.client_id', index=1,
+      name='client_id', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.client_id', index=0,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, json_name='clientId', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='client_secret', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.client_secret', index=2,
+      name='client_secret', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.client_secret', index=1,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, json_name='clientSecret', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='button_image_url', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.button_image_url', index=3,
+      name='button_image_url', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.button_image_url', index=2,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, json_name='buttonImageUrl', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='provider', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.provider', index=4,
+      name='provider', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.provider', index=3,
       number=6, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, json_name='provider', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='oidc_discovery_url', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.oidc_discovery_url', index=5,
+      name='oidc_discovery_url', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.oidc_discovery_url', index=4,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, json_name='oidcDiscoveryUrl', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='mfa', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.mfa', index=6,
+      name='mfa', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.mfa', index=5,
       number=8, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, json_name='mfa', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='type', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.type', index=7,
+      name='type', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.type', index=6,
       number=9, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, json_name='type', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='id', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.id', index=8,
+      name='id', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.id', index=7,
       number=10, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, json_name='id', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='scopes', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.scopes', index=9,
+      name='scopes', full_name='depot.devtools.auth.v0.identity.admin.UpdateConnectionRequest.scopes', index=8,
       number=11, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -3022,7 +3015,7 @@ _UPDATECONNECTIONREQUEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=7290,
-  serialized_end=8464,
+  serialized_end=8450,
 )
 
 
@@ -3046,8 +3039,8 @@ _UPDATECONNECTIONRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8466,
-  serialized_end=8492,
+  serialized_start=8452,
+  serialized_end=8478,
 )
 
 
@@ -3078,8 +3071,8 @@ _DELETECONNECTIONREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8494,
-  serialized_end=8535,
+  serialized_start=8480,
+  serialized_end=8521,
 )
 
 
@@ -3103,8 +3096,8 @@ _DELETECONNECTIONRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8537,
-  serialized_end=8563,
+  serialized_start=8523,
+  serialized_end=8549,
 )
 
 
@@ -3128,8 +3121,8 @@ _GETOAUTH2CLIENTSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8565,
-  serialized_end=8590,
+  serialized_start=8551,
+  serialized_end=8576,
 )
 
 
@@ -3384,8 +3377,8 @@ _GETOAUTH2CLIENTSRESPONSE_CLIENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8720,
-  serialized_end=10674,
+  serialized_start=8706,
+  serialized_end=10660,
 )
 
 _GETOAUTH2CLIENTSRESPONSE = _descriptor.Descriptor(
@@ -3415,8 +3408,8 @@ _GETOAUTH2CLIENTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8593,
-  serialized_end=10674,
+  serialized_start=8579,
+  serialized_end=10660,
 )
 
 
@@ -3650,8 +3643,8 @@ _CREATEOAUTH2CLIENTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10677,
-  serialized_end=12483,
+  serialized_start=10663,
+  serialized_end=12469,
 )
 
 
@@ -3689,8 +3682,8 @@ _CREATEOAUTH2CLIENTRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12485,
-  serialized_end=12579,
+  serialized_start=12471,
+  serialized_end=12565,
 )
 
 
@@ -3924,8 +3917,8 @@ _UPDATEOAUTH2CLIENTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12582,
-  serialized_end=14333,
+  serialized_start=12568,
+  serialized_end=14319,
 )
 
 
@@ -3963,8 +3956,8 @@ _UPDATEOAUTH2CLIENTRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14335,
-  serialized_end=14429,
+  serialized_start=14321,
+  serialized_end=14415,
 )
 
 
@@ -3995,8 +3988,8 @@ _DELETEOAUTH2CLIENTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14431,
-  serialized_end=14487,
+  serialized_start=14417,
+  serialized_end=14473,
 )
 
 
@@ -4020,8 +4013,8 @@ _DELETEOAUTH2CLIENTRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14489,
-  serialized_end=14517,
+  serialized_start=14475,
+  serialized_end=14503,
 )
 
 
@@ -4052,8 +4045,8 @@ _GETADDRESSESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14519,
-  serialized_end=14573,
+  serialized_start=14505,
+  serialized_end=14559,
 )
 
 
@@ -4119,8 +4112,8 @@ _GETADDRESSESRESPONSE_ADDRESS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14700,
-  serialized_end=14868,
+  serialized_start=14686,
+  serialized_end=14854,
 )
 
 _GETADDRESSESRESPONSE = _descriptor.Descriptor(
@@ -4150,8 +4143,8 @@ _GETADDRESSESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14576,
-  serialized_end=14868,
+  serialized_start=14562,
+  serialized_end=14854,
 )
 
 
@@ -4194,8 +4187,8 @@ _GETADDRESSREQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=14870,
-  serialized_end=14954,
+  serialized_start=14856,
+  serialized_end=14940,
 )
 
 
@@ -4261,8 +4254,8 @@ _GETADDRESSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14957,
-  serialized_end=15136,
+  serialized_start=14943,
+  serialized_end=15122,
 )
 
 
@@ -4312,8 +4305,8 @@ _UPDATEADDRESSREQUEST = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=15138,
-  serialized_end=15247,
+  serialized_start=15124,
+  serialized_end=15233,
 )
 
 
@@ -4337,8 +4330,8 @@ _UPDATEADDRESSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15249,
-  serialized_end=15272,
+  serialized_start=15235,
+  serialized_end=15258,
 )
 
 
@@ -4369,8 +4362,8 @@ _GETTRAITSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15274,
-  serialized_end=15325,
+  serialized_start=15260,
+  serialized_end=15311,
 )
 
 
@@ -4401,8 +4394,8 @@ _GETTRAITSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15327,
-  serialized_end=15370,
+  serialized_start=15313,
+  serialized_end=15356,
 )
 
 
@@ -4440,8 +4433,8 @@ _UPDATETRAITSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15372,
-  serialized_end=15450,
+  serialized_start=15358,
+  serialized_end=15436,
 )
 
 
@@ -4465,8 +4458,8 @@ _UPDATETRAITSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15452,
-  serialized_end=15474,
+  serialized_start=15438,
+  serialized_end=15460,
 )
 
 
@@ -4497,8 +4490,8 @@ _GETIDENTITYLOGINATTEMPTSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15476,
-  serialized_end=15542,
+  serialized_start=15462,
+  serialized_end=15528,
 )
 
 
@@ -4564,8 +4557,8 @@ _GETIDENTITYLOGINATTEMPTSRESPONSE_ATTEMPT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15691,
-  serialized_end=15946,
+  serialized_start=15677,
+  serialized_end=15932,
 )
 
 _GETIDENTITYLOGINATTEMPTSRESPONSE = _descriptor.Descriptor(
@@ -4595,8 +4588,8 @@ _GETIDENTITYLOGINATTEMPTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15545,
-  serialized_end=15946,
+  serialized_start=15531,
+  serialized_end=15932,
 )
 
 
@@ -4634,8 +4627,8 @@ _CREATEIDSCHEMAREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15948,
-  serialized_end=16042,
+  serialized_start=15934,
+  serialized_end=16028,
 )
 
 
@@ -4666,8 +4659,8 @@ _CREATEIDSCHEMARESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16044,
-  serialized_end=16084,
+  serialized_start=16030,
+  serialized_end=16070,
 )
 
 
@@ -4691,8 +4684,8 @@ _GETIDSCHEMASREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16086,
-  serialized_end=16107,
+  serialized_start=16072,
+  serialized_end=16093,
 )
 
 
@@ -4758,8 +4751,8 @@ _GETIDSCHEMASRESPONSE_JSONSCHEMA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16241,
-  serialized_end=16489,
+  serialized_start=16227,
+  serialized_end=16475,
 )
 
 _GETIDSCHEMASRESPONSE = _descriptor.Descriptor(
@@ -4789,8 +4782,8 @@ _GETIDSCHEMASRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16110,
-  serialized_end=16489,
+  serialized_start=16096,
+  serialized_end=16475,
 )
 
 
@@ -4821,8 +4814,8 @@ _GETIDSCHEMAREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16491,
-  serialized_end=16527,
+  serialized_start=16477,
+  serialized_end=16513,
 )
 
 
@@ -4888,8 +4881,8 @@ _GETIDSCHEMARESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16530,
-  serialized_end=16787,
+  serialized_start=16516,
+  serialized_end=16773,
 )
 
 
@@ -4913,8 +4906,8 @@ _GETDEFAULTIDSCHEMAREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16789,
-  serialized_end=16816,
+  serialized_start=16775,
+  serialized_end=16802,
 )
 
 
@@ -4980,8 +4973,8 @@ _GETDEFAULTIDSCHEMARESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16819,
-  serialized_end=17083,
+  serialized_start=16805,
+  serialized_end=17069,
 )
 
 
@@ -5026,8 +5019,8 @@ _UPDATEIDSCHEMAREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17085,
-  serialized_end=17195,
+  serialized_start=17071,
+  serialized_end=17181,
 )
 
 
@@ -5051,8 +5044,8 @@ _UPDATEIDSCHEMARESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17197,
-  serialized_end=17221,
+  serialized_start=17183,
+  serialized_end=17207,
 )
 
 
@@ -5083,8 +5076,8 @@ _MARKDEFAULTIDSCHEMAREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17223,
-  serialized_end=17267,
+  serialized_start=17209,
+  serialized_end=17253,
 )
 
 
@@ -5108,8 +5101,8 @@ _MARKDEFAULTIDSCHEMARESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17269,
-  serialized_end=17298,
+  serialized_start=17255,
+  serialized_end=17284,
 )
 
 
@@ -5140,8 +5133,8 @@ _DELETEIDSCHEMAREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17300,
-  serialized_end=17339,
+  serialized_start=17286,
+  serialized_end=17325,
 )
 
 
@@ -5165,8 +5158,8 @@ _DELETEIDSCHEMARESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17341,
-  serialized_end=17365,
+  serialized_start=17327,
+  serialized_end=17351,
 )
 
 
@@ -5190,8 +5183,8 @@ _GETEMAILSSETUPREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17367,
-  serialized_end=17390,
+  serialized_start=17353,
+  serialized_end=17376,
 )
 
 
@@ -5229,8 +5222,8 @@ _GETEMAILSSETUPRESPONSE_EMAILTEMPLATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18113,
-  serialized_end=18180,
+  serialized_start=18099,
+  serialized_end=18166,
 )
 
 _GETEMAILSSETUPRESPONSE_EMAILSENDER = _descriptor.Descriptor(
@@ -5288,8 +5281,8 @@ _GETEMAILSSETUPRESPONSE_EMAILSENDER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18183,
-  serialized_end=18365,
+  serialized_start=18169,
+  serialized_end=18351,
 )
 
 _GETEMAILSSETUPRESPONSE = _descriptor.Descriptor(
@@ -5361,8 +5354,8 @@ _GETEMAILSSETUPRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17393,
-  serialized_end=18365,
+  serialized_start=17379,
+  serialized_end=18351,
 )
 
 
@@ -5400,8 +5393,8 @@ _UPDATEEMAILSSETUPREQUEST_EMAILTEMPLATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19072,
-  serialized_end=19139,
+  serialized_start=19058,
+  serialized_end=19125,
 )
 
 _UPDATEEMAILSSETUPREQUEST_EMAILSENDER = _descriptor.Descriptor(
@@ -5459,8 +5452,8 @@ _UPDATEEMAILSSETUPREQUEST_EMAILSENDER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18183,
-  serialized_end=18365,
+  serialized_start=18169,
+  serialized_end=18351,
 )
 
 _UPDATEEMAILSSETUPREQUEST = _descriptor.Descriptor(
@@ -5525,8 +5518,8 @@ _UPDATEEMAILSSETUPREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18368,
-  serialized_end=19324,
+  serialized_start=18354,
+  serialized_end=19310,
 )
 
 
@@ -5550,8 +5543,8 @@ _UPDATEEMAILSSETUPRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19326,
-  serialized_end=19353,
+  serialized_start=19312,
+  serialized_end=19339,
 )
 
 
@@ -5596,8 +5589,8 @@ _GETUSERBASESTATISTICSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19356,
-  serialized_end=19559,
+  serialized_start=19342,
+  serialized_end=19545,
 )
 
 
@@ -5635,8 +5628,8 @@ _GETUSERBASESTATISTICSRESPONSE_USERSPERDAYENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19978,
-  serialized_end=20040,
+  serialized_start=19964,
+  serialized_end=20026,
 )
 
 _GETUSERBASESTATISTICSRESPONSE_SESSIONSPERDAYENTRY = _descriptor.Descriptor(
@@ -5673,8 +5666,8 @@ _GETUSERBASESTATISTICSRESPONSE_SESSIONSPERDAYENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20042,
-  serialized_end=20107,
+  serialized_start=20028,
+  serialized_end=20093,
 )
 
 _GETUSERBASESTATISTICSRESPONSE = _descriptor.Descriptor(
@@ -5732,8 +5725,8 @@ _GETUSERBASESTATISTICSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19562,
-  serialized_end=20107,
+  serialized_start=19548,
+  serialized_end=20093,
 )
 
 _CREATEIDENTITYREQUEST.fields_by_name['data'].message_type = google_dot_protobuf_dot_struct__pb2._STRUCT
@@ -6582,8 +6575,8 @@ _ADMIN = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=21723,
-  serialized_end=26622,
+  serialized_start=21709,
+  serialized_end=26608,
   methods=[
   _descriptor.MethodDescriptor(
     name='CreateIdentity',
