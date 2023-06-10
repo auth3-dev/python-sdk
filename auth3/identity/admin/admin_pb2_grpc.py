@@ -64,15 +64,15 @@ class AdminStub(object):
                 request_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateAddressRequest.SerializeToString,
                 response_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateAddressResponse.FromString,
                 )
-        self.GetTraits = channel.unary_unary(
-                '/depot.devtools.auth.v0.identity.admin.Admin/GetTraits',
-                request_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetTraitsRequest.SerializeToString,
-                response_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetTraitsResponse.FromString,
+        self.GetProfile = channel.unary_unary(
+                '/depot.devtools.auth.v0.identity.admin.Admin/GetProfile',
+                request_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetProfileRequest.SerializeToString,
+                response_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetProfileResponse.FromString,
                 )
-        self.UpdateTraits = channel.unary_unary(
-                '/depot.devtools.auth.v0.identity.admin.Admin/UpdateTraits',
-                request_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateTraitsRequest.SerializeToString,
-                response_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateTraitsResponse.FromString,
+        self.UpdateProfile = channel.unary_unary(
+                '/depot.devtools.auth.v0.identity.admin.Admin/UpdateProfile',
+                request_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateProfileRequest.SerializeToString,
+                response_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateProfileResponse.FromString,
                 )
         self.GetCredentials = channel.unary_unary(
                 '/depot.devtools.auth.v0.identity.admin.Admin/GetCredentials',
@@ -244,13 +244,13 @@ class AdminServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def GetTraits(self, request, context):
+    def GetProfile(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def UpdateTraits(self, request, context):
+    def UpdateProfile(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -435,15 +435,15 @@ def add_AdminServicer_to_server(servicer, server):
                     request_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateAddressRequest.FromString,
                     response_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateAddressResponse.SerializeToString,
             ),
-            'GetTraits': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetTraits,
-                    request_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetTraitsRequest.FromString,
-                    response_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetTraitsResponse.SerializeToString,
+            'GetProfile': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetProfile,
+                    request_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetProfileRequest.FromString,
+                    response_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetProfileResponse.SerializeToString,
             ),
-            'UpdateTraits': grpc.unary_unary_rpc_method_handler(
-                    servicer.UpdateTraits,
-                    request_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateTraitsRequest.FromString,
-                    response_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateTraitsResponse.SerializeToString,
+            'UpdateProfile': grpc.unary_unary_rpc_method_handler(
+                    servicer.UpdateProfile,
+                    request_deserializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateProfileRequest.FromString,
+                    response_serializer=devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateProfileResponse.SerializeToString,
             ),
             'GetCredentials': grpc.unary_unary_rpc_method_handler(
                     servicer.GetCredentials,
@@ -731,7 +731,7 @@ class Admin(object):
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
-    def GetTraits(request,
+    def GetProfile(request,
             target,
             options=(),
             channel_credentials=None,
@@ -741,14 +741,14 @@ class Admin(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/depot.devtools.auth.v0.identity.admin.Admin/GetTraits',
-            devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetTraitsRequest.SerializeToString,
-            devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetTraitsResponse.FromString,
+        return grpc.experimental.unary_unary(request, target, '/depot.devtools.auth.v0.identity.admin.Admin/GetProfile',
+            devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetProfileRequest.SerializeToString,
+            devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.GetProfileResponse.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
-    def UpdateTraits(request,
+    def UpdateProfile(request,
             target,
             options=(),
             channel_credentials=None,
@@ -758,9 +758,9 @@ class Admin(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/depot.devtools.auth.v0.identity.admin.Admin/UpdateTraits',
-            devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateTraitsRequest.SerializeToString,
-            devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateTraitsResponse.FromString,
+        return grpc.experimental.unary_unary(request, target, '/depot.devtools.auth.v0.identity.admin.Admin/UpdateProfile',
+            devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateProfileRequest.SerializeToString,
+            devtools_dot_auth_dot_v0_dot_proto_dot_identity_dot_admin_dot_admin__pb2.UpdateProfileResponse.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
